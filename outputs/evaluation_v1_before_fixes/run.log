@@ -1,0 +1,49 @@
+18:11:16 | INFO    | sleep_detector | Clip clip01_normal_work.mp4 (tune split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip01_normal_work\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip03a_fake_sleep_face.mp4 (tune split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip03a_fake_sleep_face\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip04a_head_on_desk.mp4 (tune split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip04a_head_on_desk\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip02_eyes_closed_5s.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip02_eyes_closed_5s\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip03b_fake_sleep_face.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip03b_fake_sleep_face\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip04b_facing_away.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip04b_facing_away\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip05_phone.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip05_phone\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip06_dim_light.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip06_dim_light\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Clip clip08_two_people.mp4 (eval split)
+18:11:16 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip08_two_people\signals.pkl (delete it to force re-extraction)
+18:11:16 | INFO    | sleep_detector | Tune clips: clip01_normal_work, clip03a_fake_sleep_face, clip04a_head_on_desk
+18:11:16 | INFO    | sleep_detector | Eval clips: clip02_eyes_closed_5s, clip03b_fake_sleep_face, clip04b_facing_away, clip05_phone, clip06_dim_light, clip08_two_people
+18:11:16 | INFO    | sleep_detector | Tuning on 3 clip(s) ...
+18:11:16 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.6, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.835
+18:11:17 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.5, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.835
+18:11:17 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.5, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.840
+18:11:17 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.5, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.842
+18:11:18 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.5, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.842
+18:11:18 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.55, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.835
+18:11:18 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.55, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.840
+18:11:19 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.55, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.842
+18:11:19 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.55, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.842
+18:11:19 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.6, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.831
+18:11:20 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.6, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.835
+18:11:20 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.6, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.837
+18:11:20 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.6, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.837
+18:11:21 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.65, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.827
+18:11:21 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.65, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.831
+18:11:21 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.65, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.833
+18:11:21 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.65, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.833
+18:11:22 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.7, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.825
+18:11:22 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.7, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.829
+18:11:22 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.7, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.831
+18:11:23 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.7, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.831
+18:11:23 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.75, 'motion.still_threshold': 0.005} -> F1 0.951, acc 0.813
+18:11:23 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.75, 'motion.still_threshold': 0.01} -> F1 0.957, acc 0.817
+18:11:24 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.75, 'motion.still_threshold': 0.02} -> F1 0.960, acc 0.819
+18:11:24 | INFO    | sleep_detector |   tune {'eyes.closed_ratio': 0.75, 'motion.still_threshold': 0.04} -> F1 0.960, acc 0.819
+18:11:24 | INFO    | sleep_detector | Best on tune split: {'eyes.closed_ratio': 0.5, 'motion.still_threshold': 0.02} (F1 0.960)
+18:11:33 | INFO    | sleep_detector | Wrote C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\evaluation\results_table.md (paste into the report), timelines in C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\evaluation\timelines
+18:11:33 | INFO    | sleep_detector | To adopt the tuned values, copy them from tuned_params.yaml into config.yaml

@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Large or private inputs (models are downloaded by scripts/download_models.py)
+models/*
+!models/.gitkeep
+data/videos/*
+!data/videos/.gitkeep
+refs/*
+!refs/.gitkeep
+
+# Outputs: keep the evaluation and the small per-clip results, not caches or videos
+outputs/*
+!outputs/.gitkeep
+!outputs/evaluation/
+!outputs/evaluation_v1_before_fixes/
+!outputs/clip*/
+outputs/clip*/signals.pkl
+outputs/clip*/annotated.mp4
+
+# Personal working notes
+PHASE_NOTES.md
+PROGRESS.md
+REPORT_FACTS.md

@@ -1,0 +1,10 @@
+start_sec,end_sec,person,state
+0,82,Rajni,awake
+82,91,Rajni,drowsy
+91,206,Rajni,asleep
+206,212,Rajni,awake
+0,26,Abhinand,awake
+26,68,Abhinand,asleep
+68,146,Abhinand,awake
+146,176,Abhinand,drowsy
+176,212,Abhinand,awake

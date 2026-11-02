@@ -1,0 +1,9 @@
+18:19:56 | INFO    | sleep_detector | Single-person mode: the person will be labelled 'Person 1'
+18:19:56 | INFO    | sleep_detector | Video clip02_eyes_closed_5s.mp4: 1280x720, 29.92 fps, 3705 frames (~123.8 s); analysing at 10.0 fps
+18:19:56 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip02_eyes_closed_5s\signals.pkl (delete it to force re-extraction)
+18:19:56 | INFO    | sleep_detector.aggregation | Person 1: EAR baseline 0.320 -> closed below 0.160 (first_seconds)
+18:19:56 | INFO    | sleep_detector | Analysis took 0.0 s in total
+18:19:56 | INFO    | sleep_detector | Writing annotated video ...
+18:20:07 | INFO    | sleep_detector | ---- Summary ----
+18:20:07 | INFO    | sleep_detector |   Person 1 awake throughout
+18:20:07 | INFO    | sleep_detector | Outputs written to C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip02_eyes_closed_5s

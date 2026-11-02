@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="511.2pt" height="90pt" viewBox="0 0 511.2 90" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T18:44:35.509398</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 90 
+L 511.2 90 
+L 511.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.34 86.4 
+L 183.495556 86.4 
+L 183.495556 18 
+L 38.34 18 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 38.34 35.823872 
+L 128.436552 35.823872 
+L 128.436552 21.109091 
+L 38.34 21.109091 
+z
+" clip-path="url(#p88205fe7e6)" style="fill: #c3c8d0"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 38.34 59.557391 
+L 148.458008 59.557391 
+L 148.458008 44.842609 
+L 38.34 44.842609 
+z
+" clip-path="url(#p88205fe7e6)" style="fill: #8daad9"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 38.34 83.290909 
+L 157.217395 83.290909 
+L 157.217395 68.576128 
+L 38.34 68.576128 
+z
+" clip-path="url(#p88205fe7e6)" style="fill: #1e3f7a"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="fill: #1b2330; font: 7.5px 'Segoe UI'; text-anchor: end" x="34.84" y="78.70969" transform="rotate(-0 34.84 78.70969)">full</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="fill: #1b2330; font: 7.5px 'Segoe UI'; text-anchor: end" x="34.84" y="55.016016" transform="rotate(-0 34.84 55.016016)">face-only</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="fill: #1b2330; font: 7.5px 'Segoe UI'; text-anchor: end" x="34.84" y="31.242653" transform="rotate(-0 34.84 31.242653)">naive</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_6">
+    <path d="M 38.34 86.4 
+L 38.34 18 
+" style="fill: none; stroke: #e3e6eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_4">
+    <text style="fill: #1b2330; font: 7.2px 'Segoe UI'; text-anchor: start" x="130.939234" y="30.303607" transform="rotate(-0 130.939234 30.303607)">0.72</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #1b2330; font: 7.2px 'Segoe UI'; text-anchor: start" x="150.96069" y="54.037125" transform="rotate(-0 150.96069 54.037125)">0.88</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #1b2330; font: 700 7.2px 'Segoe UI'; text-anchor: start" x="159.720077" y="77.770643" transform="rotate(-0 159.720077 77.770643)">0.95</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #1b2330; font: 600 7.6px 'Segoe UI'; text-anchor: start" x="38.34" y="14" transform="rotate(-0 38.34 14)">Asleep F1, eval split</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 200.914222 86.4 
+L 346.069778 86.4 
+L 346.069778 18 
+L 200.914222 18 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 200.914222 35.823872 
+L 317.110172 35.823872 
+L 317.110172 21.109091 
+L 200.914222 21.109091 
+z
+" clip-path="url(#pbd71caa05d)" style="fill: #c3c8d0"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 200.914222 59.557391 
+L 248.584355 59.557391 
+L 248.584355 44.842609 
+L 200.914222 44.842609 
+z
+" clip-path="url(#pbd71caa05d)" style="fill: #8daad9"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 200.914222 83.290909 
+L 200.914222 83.290909 
+L 200.914222 68.576128 
+L 200.914222 68.576128 
+z
+" clip-path="url(#pbd71caa05d)" style="fill: #1e3f7a"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_4">
+     <g id="line2d_4"/>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_5"/>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_6"/>
+    </g>
+   </g>
+   <g id="patch_11">
+    <path d="M 200.914222 86.4 
+L 200.914222 18 
+" style="fill: none; stroke: #e3e6eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <text style="fill: #1b2330; font: 7.2px 'Segoe UI'; text-anchor: start" x="319.612854" y="30.303607" transform="rotate(-0 319.612854 30.303607)">117</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #1b2330; font: 7.2px 'Segoe UI'; text-anchor: start" x="251.087037" y="54.037125" transform="rotate(-0 251.087037 54.037125)">48</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #1b2330; font: 700 7.2px 'Segoe UI'; text-anchor: start" x="203.416904" y="77.770643" transform="rotate(-0 203.416904 77.770643)">0</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #1b2330; font: 600 7.6px 'Segoe UI'; text-anchor: start" x="200.914222" y="14" transform="rotate(-0 200.914222 14)">False ‘asleep’ s, phone clip (126 s)</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_12">
+    <path d="M 363.488444 86.4 
+L 508.644 86.4 
+L 508.644 18 
+L 363.488444 18 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 363.488444 59.557391 
+L 488.622544 59.557391 
+L 488.622544 44.842609 
+L 363.488444 44.842609 
+z
+" clip-path="url(#p3c693c2684)" style="fill: #8daad9"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 363.488444 83.290909 
+L 365.07242 83.290909 
+L 365.07242 68.576128 
+L 363.488444 68.576128 
+z
+" clip-path="url(#p3c693c2684)" style="fill: #1e3f7a"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_7">
+     <g id="line2d_7"/>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_8"/>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_9"/>
+    </g>
+   </g>
+   <g id="patch_15">
+    <path d="M 363.488444 86.4 
+L 363.488444 18 
+" style="fill: none; stroke: #e3e6eb; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="fill: #6b7482; font: italic 6.8px 'Segoe UI'; text-anchor: start" x="363.488444" y="30.196763" transform="rotate(-0 363.488444 30.196763)">not measured</text>
+   </g>
+   <g id="text_13">
+    <text style="fill: #1b2330; font: 7.2px 'Segoe UI'; text-anchor: start" x="491.125226" y="54.037125" transform="rotate(-0 491.125226 54.037125)">79</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #1b2330; font: 700 7.2px 'Segoe UI'; text-anchor: start" x="367.575102" y="77.770643" transform="rotate(-0 367.575102 77.770643)">1</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #1b2330; font: 600 7.6px 'Segoe UI'; text-anchor: start" x="363.488444" y="14" transform="rotate(-0 363.488444 14)">Missed sleep s, head on desk (79 s)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p88205fe7e6">
+   <rect x="38.34" y="18" width="145.155556" height="68.4"/>
+  </clipPath>
+  <clipPath id="pbd71caa05d">
+   <rect x="200.914222" y="18" width="145.155556" height="68.4"/>
+  </clipPath>
+  <clipPath id="p3c693c2684">
+   <rect x="363.488444" y="18" width="145.155556" height="68.4"/>
+  </clipPath>
+ </defs>
+</svg>

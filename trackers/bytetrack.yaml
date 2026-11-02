@@ -1,0 +1,10 @@
+# ByteTrack settings (copied from ultralytics defaults; only track_buffer changed).
+# track_buffer is in PROCESSED frames: at 10 fps, 100 = keep a lost person's ID for 10 s
+# (e.g. while someone walks behind the other person), instead of the default 3 s.
+tracker_type: bytetrack
+track_high_thresh: 0.25
+track_low_thresh: 0.1
+new_track_thresh: 0.25
+track_buffer: 100
+match_thresh: 0.8
+fuse_score: True

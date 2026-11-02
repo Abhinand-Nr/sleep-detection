@@ -1,0 +1,125 @@
+time_sec,person,visible,face_visible,ear,head_pitch,motion,posture_flag,state,confidence,reason,closed_frac,perclos,kp_motion,n_kp,identity_source
+0,Person 1,True,True,0.3114,1.3643,0.0227,upright,awake,0.9,eyes open,0.0,,0.006,11.0,single
+1,Person 1,True,True,0.2966,-0.5268,0.0014,upright,awake,0.9,eyes open,0.1,,0.0017,11.0,single
+2,Person 1,True,True,0.2729,-3.9801,0.0023,upright,awake,0.9,eyes open,0.1,,0.0017,11.0,single
+3,Person 1,True,True,0.2974,-5.7321,0.0118,upright,awake,0.9,eyes open,0.0,,0.0021,11.0,single
+4,Person 1,True,True,0.2341,-8.6563,0.0801,upright,awake,0.9,eyes open,0.4,,0.011,11.0,single
+5,Person 1,True,True,0.2382,-13.4187,0.0399,upright,awake,0.9,eyes open,0.2,,0.0118,10.5,single
+6,Person 1,True,True,0.2943,1.81,0.0469,upright,awake,0.9,eyes open,0.0,,0.0106,11.0,single
+7,Person 1,True,True,0.3157,3.3022,0.0021,upright,awake,0.9,eyes open,0.1,,0.0016,11.0,single
+8,Person 1,True,True,0.3373,1.4923,0.0024,upright,awake,0.9,eyes open,0.0,,0.0017,11.0,single
+9,Person 1,True,True,0.3311,0.677,0.0,upright,awake,0.9,eyes open,0.1,,0.0013,11.0,single
+10,Person 1,True,True,0.2762,-1.0633,0.0004,upright,awake,0.9,eyes open,0.3,,0.0013,11.0,single
+11,Person 1,True,True,0.302,0.3696,0.0015,upright,awake,0.9,eyes open,0.1,,0.0016,11.0,single
+12,Person 1,True,True,0.3133,-0.0795,0.0,upright,awake,0.9,eyes open,0.0,,0.0013,11.0,single
+13,Person 1,True,True,0.3228,2.7629,0.0027,upright,awake,0.9,eyes open,0.0,,0.0019,11.0,single
+14,Person 1,True,True,0.3425,4.7676,0.0133,upright,awake,0.9,eyes open,0.0,,0.0023,11.0,single
+15,Person 1,True,True,0.2947,-7.0152,0.0011,upright,awake,0.9,eyes open,0.1,,0.0026,11.0,single
+16,Person 1,True,True,0.308,-6.4533,0.0017,upright,awake,0.9,eyes open,0.0,,0.0014,11.0,single
+17,Person 1,True,True,0.3203,-5.2362,0.0014,upright,awake,0.9,eyes open,0.0,,0.0015,11.0,single
+18,Person 1,True,True,0.3051,-5.6333,0.0004,upright,awake,0.9,eyes open,0.1,,0.0012,11.0,single
+19,Person 1,True,True,0.3024,-5.2527,0.0073,upright,awake,0.9,eyes open,0.0,,0.0027,11.0,single
+20,Person 1,True,True,0.3313,-0.1511,0.0989,upright,awake,0.9,eyes open,0.0,,0.0166,11.0,single
+21,Person 1,True,True,0.3249,5.5034,0.006,upright,awake,0.9,eyes open,0.0,,0.0027,11.0,single
+22,Person 1,True,True,0.3336,1.7369,0.1382,upright,awake,0.9,eyes open,0.0,,0.0186,9.5,single
+23,Person 1,True,True,0.3117,-3.6947,0.0352,upright,awake,0.9,eyes open,0.0,,0.0064,10.0,single
+24,Person 1,True,True,0.3127,-1.8496,0.0029,upright,awake,0.9,eyes open,0.1,,0.0019,11.0,single
+25,Person 1,True,True,0.3106,-0.5232,0.0002,upright,awake,0.9,eyes open,0.0,,0.0016,11.0,single
+26,Person 1,True,True,0.3055,-2.9255,0.1045,upright,awake,0.9,eyes open,0.0,,0.021,10.5,single
+27,Person 1,True,True,0.3489,7.8448,0.0786,upright,awake,0.9,eyes open,0.1,,0.015,10.0,single
+28,Person 1,True,True,0.3803,3.4931,0.0447,upright,awake,0.9,eyes open,0.0,,0.0094,10.0,single
+29,Person 1,True,True,0.3258,0.0174,0.0349,upright,awake,0.9,eyes open,0.0,0.06,0.0092,10.0,single
+30,Person 1,True,True,0.2933,-3.7428,0.0551,upright,awake,0.9,eyes open,0.1,0.0633,0.0199,11.0,single
+31,Person 1,True,True,0.2899,-6.0516,0.0111,upright,awake,0.9,eyes open,0.1,0.0633,0.0023,11.0,single
+32,Person 1,True,True,0.162,-6.3401,0.01,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.0767,0.002,11.0,single
+33,Person 1,True,True,0.0541,-6.6572,0.0032,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.11,0.0018,11.0,single
+34,Person 1,True,True,0.025,-7.2357,0.0007,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.13,0.0014,11.0,single
+35,Person 1,True,True,0.0209,-7.8774,0.0003,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.1567,0.0012,11.0,single
+36,Person 1,True,True,0.2038,-8.2771,0.0035,upright,drowsy,0.6,eyes closed longer than a blink,0.3333,0.1672,0.0018,11.0,single
+37,Person 1,True,True,0.3537,1.2237,0.0052,upright,awake,0.9,eyes open,0.1,0.1672,0.0022,11.0,single
+38,Person 1,True,True,0.3118,0.3884,0.0915,upright,awake,0.9,eyes open,0.0,0.1672,0.0176,11.0,single
+39,Person 1,True,True,0.1977,-2.4081,0.0458,upright,awake,0.9,eyes open,0.3,0.1739,0.0101,11.0,single
+40,Person 1,True,True,0.2925,-9.79,0.1718,upright,awake,0.9,eyes open,0.2,0.1706,0.0186,11.0,single
+41,Person 1,True,True,0.3249,10.2328,0.2224,upright,drowsy,0.6,head nodding,0.0,0.1672,0.0362,11.0,single
+42,Person 1,True,True,0.2524,-10.7015,0.1018,upright,drowsy,0.6,head nodding,0.2,0.1739,0.0165,11.0,single
+43,Person 1,True,True,0.2985,-1.4281,0.008,upright,drowsy,0.6,head nodding,0.0,0.1739,0.0033,11.0,single
+44,Person 1,True,True,0.3045,0.0272,0.0111,upright,drowsy,0.6,head nodding,0.2,0.1806,0.0023,11.0,single
+45,Person 1,True,True,0.3302,-1.3117,0.0582,upright,drowsy,0.6,head nodding,0.1,0.1806,0.0088,11.0,single
+46,Person 1,True,True,0.2734,-9.1432,0.0213,upright,awake,0.9,eyes open,0.1,0.1839,0.0047,11.0,single
+47,Person 1,True,True,0.2851,-8.5836,0.0091,upright,awake,0.9,eyes open,0.0,0.1839,0.0021,10.0,single
+48,Person 1,True,True,0.268,-8.2025,0.0665,upright,awake,0.9,eyes open,0.1,0.1839,0.0064,9.5,single
+49,Person 1,True,True,0.3018,-6.4889,0.0681,upright,awake,0.9,eyes open,0.0,0.1839,0.0071,9.5,single
+50,Person 1,True,True,0.3284,2.0857,0.0271,upright,awake,0.9,eyes open,0.0,0.1839,0.0037,11.0,single
+51,Person 1,True,True,0.3419,7.7241,0.0016,upright,awake,0.9,eyes open,0.0,0.1839,0.0023,11.0,single
+52,Person 1,True,True,0.3389,6.1278,0.0004,upright,awake,0.9,eyes open,0.1,0.1873,0.0025,11.0,single
+53,Person 1,True,True,0.3245,4.952,0.0021,upright,awake,0.9,eyes open,0.0,0.1873,0.0019,11.0,single
+54,Person 1,True,True,0.2901,4.1215,0.0012,upright,awake,0.9,eyes open,0.1,0.1873,0.0021,11.0,single
+55,Person 1,True,True,0.3015,3.8676,0.0001,upright,awake,0.9,eyes open,0.0,0.1873,0.0018,11.0,single
+56,Person 1,True,True,0.3138,3.967,0.001,upright,awake,0.9,eyes open,0.0,0.1873,0.0022,11.0,single
+57,Person 1,True,True,0.3226,3.7905,0.0017,upright,awake,0.9,eyes open,0.0,0.1839,0.0019,11.0,single
+58,Person 1,True,True,0.2965,3.8684,0.0422,upright,awake,0.9,eyes open,0.0,0.1839,0.0067,11.0,single
+59,Person 1,True,True,0.3078,-0.5358,0.0819,upright,awake,0.9,eyes open,0.0,0.1839,0.0083,11.0,single
+60,Person 1,True,True,0.2419,-3.3443,0.0539,upright,awake,0.9,eyes open,0.2,0.1873,0.0053,11.0,single
+61,Person 1,True,True,0.2476,-5.578,0.0012,upright,drowsy,0.6,eyes closed longer than a blink,0.3,0.194,0.0018,11.0,single
+62,Person 1,True,True,0.0161,-5.8918,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2107,0.0016,11.0,single
+63,Person 1,True,True,0.0119,-6.5123,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2107,0.0017,11.0,single
+64,Person 1,True,True,0.0171,-6.2226,0.0005,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2107,0.0011,11.0,single
+65,Person 1,True,True,0.0115,-6.9614,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2107,0.0015,11.0,single
+66,Person 1,True,True,0.0211,-6.4746,0.0005,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2333,0.0019,11.0,single
+67,Person 1,True,True,0.0134,-4.0043,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2633,0.0016,11.0,single
+68,Person 1,True,True,0.2766,-2.7599,0.0067,upright,drowsy,0.6,eyes closed longer than a blink,0.3,0.2733,0.0028,11.0,single
+69,Person 1,True,True,0.3571,-1.2804,0.0931,upright,awake,0.9,eyes open,0.1,0.2667,0.017,11.0,single
+70,Person 1,True,True,0.3468,9.0393,0.0339,upright,awake,0.9,eyes open,0.1,0.2633,0.0056,11.0,single
+71,Person 1,True,True,0.3362,6.3872,0.0133,upright,awake,0.9,eyes open,0.2,0.27,0.0047,11.0,single
+72,Person 1,True,True,0.3586,6.3071,0.0494,upright,awake,0.9,eyes open,0.0,0.2642,0.0078,11.0,single
+73,Person 1,True,True,0.2418,-9.6689,0.0454,upright,awake,0.9,eyes open,0.2,0.2709,0.0067,11.0,single
+74,Person 1,True,True,0.3337,5.4023,0.0488,upright,awake,0.9,eyes open,0.0,0.2642,0.0084,11.0,single
+75,Person 1,True,True,0.3135,6.5734,0.0028,upright,awake,0.9,eyes open,0.2,0.2676,0.0023,11.0,single
+76,Person 1,True,True,0.3349,6.1295,0.0012,upright,awake,0.9,eyes open,0.0,0.2642,0.0015,11.0,single
+77,Person 1,True,True,0.3454,5.4798,0.0008,upright,awake,0.9,eyes open,0.0,0.2642,0.0016,11.0,single
+78,Person 1,True,True,0.3097,3.6069,0.0004,upright,awake,0.9,eyes open,0.2,0.2676,0.0015,11.0,single
+79,Person 1,True,True,0.3288,4.1547,0.0001,upright,awake,0.9,eyes open,0.0,0.2676,0.0017,11.0,single
+80,Person 1,True,True,0.3069,2.9139,0.0376,upright,awake,0.9,eyes open,0.0,0.2676,0.0054,11.0,single
+81,Person 1,True,True,0.3305,2.8313,0.013,upright,awake,0.9,eyes open,0.0,0.2676,0.004,11.0,single
+82,Person 1,True,True,0.2809,1.3371,0.0014,upright,awake,0.9,eyes open,0.1,0.2676,0.0016,11.0,single
+83,Person 1,True,True,0.2754,1.8431,0.0001,upright,awake,0.9,eyes open,0.1,0.2709,0.0017,11.0,single
+84,Person 1,True,True,0.3089,1.9601,0.0006,upright,awake,0.9,eyes open,0.0,0.2676,0.002,11.0,single
+85,Person 1,True,True,0.3262,1.4781,0.0018,upright,awake,0.9,eyes open,0.0,0.2676,0.0026,11.0,single
+86,Person 1,True,True,0.3068,5.341,0.042,upright,awake,0.9,eyes open,0.1,0.2709,0.0101,11.0,single
+87,Person 1,True,True,0.2509,-8.7277,0.0312,upright,awake,0.9,eyes open,0.2,0.2776,0.007,11.0,single
+88,Person 1,True,True,0.2384,-7.3226,0.0051,upright,awake,0.9,eyes open,0.3,0.2876,0.0019,11.0,single
+89,Person 1,True,True,0.2335,-8.3513,0.0,upright,awake,0.9,eyes open,0.1,0.291,0.0015,11.0,single
+90,Person 1,True,True,0.058,-7.6532,0.0,upright,drowsy,0.6,eyes closed longer than a blink,0.6,0.3043,0.0018,11.0,single
+91,Person 1,True,True,0.0385,-7.1823,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3278,0.0016,11.0,single
+92,Person 1,True,True,0.0378,-6.9499,0.0001,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3278,0.0012,11.0,single
+93,Person 1,True,True,0.0386,-7.4345,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3278,0.0011,11.0,single
+94,Person 1,True,True,0.0346,-7.9139,0.0001,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3278,0.0011,11.0,single
+95,Person 1,True,True,0.2504,-9.1761,0.024,upright,drowsy,0.6,eyes closed longer than a blink,0.3,0.3043,0.0062,11.0,single
+96,Person 1,True,True,0.2781,-7.3531,0.0138,upright,awake,0.9,eyes open,0.1,0.2742,0.0048,11.0,single
+97,Person 1,True,True,0.4008,1.6957,0.0037,upright,awake,0.9,eyes open,0.1,0.2441,0.0038,11.0,single
+98,Person 1,True,True,0.3403,-4.8079,0.1275,upright,awake,0.9,eyes open,0.1,0.2375,0.0137,11.0,single
+99,Person 1,True,True,0.2257,-12.633,0.0772,upright,awake,0.9,eyes open,0.0,0.2341,0.0101,11.0,single
+100,Person 1,True,True,0.3809,1.6415,0.1156,upright,awake,0.9,eyes open,0.2,0.2375,0.0185,11.0,single
+101,Person 1,True,True,0.378,9.071,0.0438,upright,awake,0.9,eyes open,0.0,0.2308,0.0072,11.0,single
+102,Person 1,True,True,0.361,7.0575,0.026,upright,awake,0.9,eyes open,0.1,0.2333,0.0045,11.0,single
+103,Person 1,True,True,0.3314,8.0578,0.0008,upright,awake,0.9,eyes open,0.1,0.23,0.0041,11.0,single
+104,Person 1,True,True,0.3396,3.983,0.0001,upright,awake,0.9,eyes open,0.0,0.23,0.0043,11.0,single
+105,Person 1,True,True,0.2915,4.7671,0.0003,upright,awake,0.9,eyes open,0.1,0.2267,0.0013,11.0,single
+106,Person 1,True,True,0.3223,4.6226,0.0,upright,awake,0.9,eyes open,0.0,0.2267,0.0009,11.0,single
+107,Person 1,True,True,0.338,4.7696,0.001,upright,awake,0.9,eyes open,0.0,0.2267,0.0014,11.0,single
+108,Person 1,True,True,0.3363,-0.8708,0.1235,upright,awake,0.9,eyes open,0.1111,0.2241,0.0213,11.0,single
+109,Person 1,True,True,0.3035,0.817,0.0477,upright,awake,0.9,eyes open,0.2,0.2308,0.0091,11.0,single
+110,Person 1,True,True,0.3034,-2.0926,0.1298,upright,awake,0.9,eyes open,0.1,0.2341,0.016,11.0,single
+111,Person 1,True,True,0.3061,2.617,0.1087,upright,awake,0.9,eyes open,0.0,0.2341,0.0157,11.0,single
+112,Person 1,True,True,0.3016,2.4412,0.1021,upright,awake,0.9,eyes open,0.1,0.2341,0.0224,11.0,single
+113,Person 1,True,True,0.2972,1.853,0.1215,upright,awake,0.9,eyes open,0.1,0.2341,0.0159,11.0,single
+114,Person 1,True,True,0.3487,6.4461,0.0739,upright,awake,0.9,eyes open,0.0,0.2341,0.0086,11.0,single
+115,Person 1,True,True,0.3399,9.124,0.0286,upright,awake,0.9,eyes open,0.0,0.2341,0.0069,11.0,single
+116,Person 1,True,True,0.3245,7.4906,0.004,upright,awake,0.9,eyes open,0.0,0.2308,0.007,11.0,single
+117,Person 1,True,True,0.3376,9.4327,0.0061,upright,awake,0.9,eyes open,0.0,0.2241,0.004,11.0,single
+118,Person 1,True,True,0.3436,9.6717,0.0002,upright,awake,0.9,eyes open,0.0,0.214,0.0014,11.0,single
+119,Person 1,True,True,0.3441,9.9672,0.0008,upright,awake,0.9,eyes open,0.0,0.2107,0.0019,11.0,single
+120,Person 1,True,True,0.33,6.2841,0.0679,upright,awake,0.9,eyes open,0.1,0.194,0.0111,11.0,single
+121,Person 1,True,True,0.3083,-1.0405,0.1087,upright,awake,0.9,eyes open,0.0,0.1605,0.0194,11.0,single
+122,Person 1,True,True,0.3451,5.1115,0.0046,upright,awake,0.9,eyes open,0.0,0.1271,0.0027,11.0,single
+123,Person 1,True,True,0.3472,2.7881,0.0029,upright,awake,0.9,eyes open,0.0,0.0943,0.0034,11.0,single

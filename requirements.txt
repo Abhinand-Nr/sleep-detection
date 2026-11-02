@@ -1,0 +1,21 @@
+# Pinned for Python 3.12 on Windows / Linux (CPU only).
+# On Windows, PyPI torch wheels are CPU builds, so no extra index is needed.
+
+numpy==1.26.4
+# mediapipe depends on opencv-contrib-python and ultralytics on opencv-python.
+# Both provide the same `cv2` module, so they are pinned to the SAME version to avoid conflicts.
+# YuNet (FaceDetectorYN) and SFace (FaceRecognizerSF) are in the core build, so either works.
+opencv-python==4.10.0.84
+opencv-contrib-python==4.10.0.84
+mediapipe==0.10.14
+
+torch==2.5.1
+torchvision==0.20.1
+ultralytics==8.3.40
+lap==0.5.12            # needed by ByteTrack inside ultralytics
+
+pandas==2.2.3
+pyyaml==6.0.2
+scikit-learn==1.5.2
+matplotlib==3.9.2
+pytest==8.3.3

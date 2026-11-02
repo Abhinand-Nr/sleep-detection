@@ -1,0 +1,10 @@
+video,labels,refs,split
+data/videos/clip01_normal_work.mp4,data/labels/clip01_normal_work.csv,,tune
+data/videos/clip03a_fake_sleep_face.mp4,data/labels/clip03a_fake_sleep_face.csv,,tune
+data/videos/clip04a_head_on_desk.mp4,data/labels/clip04a_head_on_desk.csv,,tune
+data/videos/clip02_eyes_closed_5s.mp4,data/labels/clip02_eyes_closed_5s.csv,,eval
+data/videos/clip03b_fake_sleep_face.mp4,data/labels/clip03b_fake_sleep_face.csv,,eval
+data/videos/clip04b_facing_away.mp4,data/labels/clip04b_facing_away.csv,,eval
+data/videos/clip05_phone.mp4,data/labels/clip05_phone.csv,,eval
+data/videos/clip06_dim_light.mp4,data/labels/clip06_dim_light.csv,,eval
+data/videos/clip08_two_people.mp4,data/labels/clip08_two_people.csv,refs/,eval

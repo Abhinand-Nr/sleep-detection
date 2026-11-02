@@ -1,0 +1,126 @@
+# All tunable parameters live here. Code must not contain magic numbers.
+#
+# The pipeline has two halves:
+#   1. EXTRACTION (slow, runs the neural networks once per video, result is cached):
+#      sections models, video, detection, face, body, identity
+#   2. ANALYSIS (fast, pure rules on the cached signals; this is what evaluate.py tunes):
+#      sections eyes, motion, posture, aggregation, sleep, matching, outputs
+# Changing an EXTRACTION value invalidates the cache automatically.
+
+models:
+  yunet: models/face_detection_yunet_2023mar.onnx
+  sface: models/face_recognition_sface_2021dec.onnx
+  face_landmarker: models/face_landmarker.task
+  yolo_pose: models/yolov8n-pose.pt
+
+video:
+  process_fps: 10          # frames analysed per second; blinks last 0.1-0.4 s so >= 10 is needed
+  max_side: 1280           # resize longest side to this many pixels (null = original)
+
+# ===================== EXTRACTION =====================
+
+detection:                 # YOLOv8n-pose + ByteTrack
+  imgsz: 640
+  person_conf: 0.3         # minimum person box confidence
+  keypoint_conf: 0.5       # a body keypoint counts as visible above this confidence
+  tracker: trackers/bytetrack.yaml
+  device: cpu
+
+face:                      # YuNet face detector + MediaPipe Face Landmarker
+  yunet_score: 0.6
+  yunet_nms: 0.3
+  min_face_px: 40          # faces narrower than this are too small for reliable eye landmarks
+  crop_margin: 0.6         # landmarker sees the face box enlarged by this fraction on each side
+  landmark_conf: 0.5
+
+body:                      # motion energy
+  blur_kernel: 5           # Gaussian blur before frame differencing (removes sensor noise)
+  pixel_diff_threshold: 20 # grey-level change (0-255) for a pixel to count as "changed"
+
+identity:                  # SFace embeddings + clothing colour histogram
+  embed_every_n_frames: 3  # face embedding is slow-ish; compute on every Nth processed frame
+  hist_every_n_frames: 5
+  hist_bins: [16, 8]       # hue x saturation bins
+
+# ===================== ANALYSIS =====================
+
+eyes:
+  calibration_seconds: 10  # baseline open-eye EAR from the first seconds the face is seen
+  min_calibration_frames: 20
+  baseline_percentile: 75  # robust "eyes open" level (ignores blinks)
+  closed_ratio: 0.5        # eyes closed if EAR < closed_ratio * baseline (tuned; was 0.6)
+  fallback_threshold: 0.21 # used when calibration is impossible
+  min_plausible_baseline: 0.18  # a baseline below this means calibration saw closed eyes
+  max_yaw_deg: 35          # EAR only trusted when the head is turned less than this...
+  max_pitch_down_deg: 25   # ...and not tilted down more than this vs the person's baseline
+                           #    (measured: normal work -8..+9, phone +15..+31, chin-drop sleep about +18)
+  max_calibration_pitch_deg: 15  # calibration ignores frames with the head tilted more than this
+  max_abs_pitch_down_deg: 20     # head this far down vs the camera = looking down, whatever the baseline
+  pitch_sign: 1            # +1: positive pitch = head down. Flip to -1 if a test shows otherwise
+  blink_max_seconds: 0.5   # closures up to this long are blinks and ignored
+
+motion:
+  still_threshold: 0.02    # fraction of person-box pixels changing; below = "still" (tuned; was 0.01)
+  wake_threshold: 0.03     # above this = "clear movement" (used to wake someone up)
+
+posture:
+  min_visible_keypoints: 5 # fewer -> body "mostly not visible"
+  slump_head_height: 0.25  # head height above shoulder line, in shoulder widths; below = slumped
+  arm_contact_ratio: 0.6   # head within this many shoulder widths of a wrist/elbow...
+  arm_contact_max_head_height: 0.5   # ...while head is low = head resting on arms
+  lying_torso_angle_deg: 60          # torso tilted more than this from vertical = lying down
+
+aggregation:               # turning ~10 frames into one per-second judgement
+  visible_frac: 0.5        # person detected in >= this fraction of the second's frames
+  face_frac: 0.5
+  eye_frac: 0.5            # EAR measurable in >= this fraction
+  closed_frac: 0.5         # eyes closed in >= this fraction of measurable frames
+  posture_frac: 0.5
+  perclos_window_seconds: 30
+  perclos_min_coverage: 0.3     # PERCLOS needs EAR in >= 30% of the window's frames
+  nod_window_seconds: 5
+  nod_range_deg: 15        # head pitch swings this much within the window...
+  nod_down_deg: 15         # ...AND drops at least this far below the person's normal pitch = nodding
+
+sleep:
+  face_sleep_seconds: 10   # eyes closed + still this long -> asleep (high confidence)
+  body_sleep_seconds: 45   # no usable eyes: still + sleep posture this long -> asleep (medium)
+  wake_seconds: 2          # clear eye-opening or movement this long to leave asleep (hysteresis)
+  perclos_drowsy: 0.3
+  perclos_cooldown_seconds: 30  # ignore PERCLOS this long after waking (its window still holds the sleep)
+  backfill: true           # offline: once sleep is confirmed, label its onset seconds asleep too
+  use_body: true           # false = "face-only" baseline
+  confidence:
+    asleep_face: 0.9
+    asleep_body: 0.65
+    awake_eyes_open: 0.9
+    awake_moving: 0.75
+    awake_default: 0.5     # visible, no sleep evidence yet, but no direct proof of being awake
+    drowsy: 0.6
+    absent: 0.9
+    unknown: 0.0
+
+matching:                  # deciding who is who (offline, over the whole video)
+  sface_threshold: 0.363   # cosine similarity; OpenCV's recommended value for SFace
+  min_face_votes: 3        # matching frames needed before a track is named from its face
+  clothing_threshold: 0.7  # histogram correlation needed to name a track from clothing alone
+  min_track_seconds: 2     # shorter tracks are ignored as detector glitches
+  min_unknown_seconds: 10  # unnamed tracks shorter than this are not reported
+  max_handover_overlap_seconds: 1.0  # old and new track ID may coexist this long at an ID switch
+
+outputs:
+  annotated_video: true
+  low_confidence_warn: 0.7
+  face_unseen_warn_seconds: 60
+
+evaluation:
+  # evaluate.py tries every combination on the "tune" clips, keeps the best asleep-F1,
+  # then reports all systems on the held-out "eval" clips with those values.
+  tuning_grid:
+    eyes.closed_ratio: [0.5, 0.55, 0.6, 0.65, 0.7, 0.75]
+    motion.still_threshold: [0.005, 0.01, 0.02, 0.04]
+  positive_state: asleep
+
+logging:
+  level: INFO
+  progress_every_seconds: 30

@@ -1,0 +1,31 @@
+{
+  "video": "data\\videos\\clip01_normal_work.mp4",
+  "summary": [
+    "Person 1 awake throughout"
+  ],
+  "people": {
+    "Person 1": {
+      "asleep_intervals": [],
+      "total_asleep_sec": 0,
+      "seconds_per_state": {
+        "awake": 111,
+        "drowsy": 11,
+        "asleep": 0,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "single",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.3053,
+        "threshold": 0.1526,
+        "baseline_pitch": -0.4563
+      }
+    }
+  },
+  "definition": {
+    "face_sleep_seconds": 10,
+    "body_sleep_seconds": 45,
+    "wake_seconds": 2
+  }
+}

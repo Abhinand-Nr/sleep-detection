@@ -1,0 +1,9 @@
+18:21:57 | INFO    | sleep_detector | Single-person mode: the person will be labelled 'Person 1'
+18:21:57 | INFO    | sleep_detector | Video clip05_phone.mp4: 1280x720, 29.92 fps, 3745 frames (~125.2 s); analysing at 10.0 fps
+18:21:57 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip05_phone\signals.pkl (delete it to force re-extraction)
+18:21:57 | INFO    | sleep_detector.aggregation | Person 1: EAR baseline nan -> closed below 0.210 (fallback)
+18:21:57 | INFO    | sleep_detector | Analysis took 0.0 s in total
+18:21:58 | INFO    | sleep_detector | Writing annotated video ...
+18:22:08 | INFO    | sleep_detector | ---- Summary ----
+18:22:08 | INFO    | sleep_detector |   Person 1 awake throughout
+18:22:08 | INFO    | sleep_detector | Outputs written to C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip05_phone

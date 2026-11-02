@@ -1,0 +1,11 @@
+18:21:15 | INFO    | sleep_detector | Single-person mode: the person will be labelled 'Person 1'
+18:21:15 | INFO    | sleep_detector | Video clip04a_head_on_desk.mp4: 1280x720, 29.92 fps, 5447 frames (~182.0 s); analysing at 10.0 fps
+18:21:15 | INFO    | sleep_detector.pipeline | Loaded cached signals from C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip04a_head_on_desk\signals.pkl (delete it to force re-extraction)
+18:21:15 | INFO    | sleep_detector.aggregation | Person 1: EAR baseline 0.294 -> closed below 0.147 (first_seconds)
+18:21:15 | INFO    | sleep_detector | Analysis took 0.1 s in total
+18:21:16 | WARNING | sleep_detector.outputs | Person 1 face not seen for 82 s (00:43-02:05); relying on body signals
+18:21:16 | WARNING | sleep_detector.outputs | Person 1 asleep 00:45-02:07 has low confidence (0.65): body-only evidence
+18:21:16 | INFO    | sleep_detector | Writing annotated video ...
+18:21:31 | INFO    | sleep_detector | ---- Summary ----
+18:21:31 | INFO    | sleep_detector |   Person 1 asleep 00:45-02:07 (total 01:22)
+18:21:31 | INFO    | sleep_detector | Outputs written to C:\Users\abhin\OneDrive\Documents\AI Project\Sleep_Detector\outputs\clip04a_head_on_desk

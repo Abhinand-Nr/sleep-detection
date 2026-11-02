@@ -1,0 +1,40 @@
+{
+  "video": "data\\videos\\clip06_dim_light.mp4",
+  "summary": [
+    "Person 1 asleep 00:45-01:41 (total 00:56)"
+  ],
+  "people": {
+    "Person 1": {
+      "asleep_intervals": [
+        {
+          "start_sec": 45,
+          "end_sec": 101,
+          "start": "00:45",
+          "end": "01:41",
+          "duration_sec": 56,
+          "mean_confidence": 0.9
+        }
+      ],
+      "total_asleep_sec": 56,
+      "seconds_per_state": {
+        "awake": 60,
+        "drowsy": 6,
+        "asleep": 56,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "single",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.3176,
+        "threshold": 0.1588,
+        "baseline_pitch": -1.627
+      }
+    }
+  },
+  "definition": {
+    "face_sleep_seconds": 10,
+    "body_sleep_seconds": 45,
+    "wake_seconds": 2
+  }
+}

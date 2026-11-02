@@ -1,0 +1,4 @@
+start_sec,end_sec,person,state
+0,44,Person 1,awake
+44,123,Person 1,asleep
+123,182,Person 1,awake

@@ -1,0 +1,48 @@
+{
+  "video": "data\\videos\\clip03b_fake_sleep_face.mp4",
+  "summary": [
+    "Person 1 asleep 00:31-01:19, 02:01-02:52 (total 01:39)"
+  ],
+  "people": {
+    "Person 1": {
+      "asleep_intervals": [
+        {
+          "start_sec": 31,
+          "end_sec": 79,
+          "start": "00:31",
+          "end": "01:19",
+          "duration_sec": 48,
+          "mean_confidence": 0.9
+        },
+        {
+          "start_sec": 121,
+          "end_sec": 172,
+          "start": "02:01",
+          "end": "02:52",
+          "duration_sec": 51,
+          "mean_confidence": 0.9
+        }
+      ],
+      "total_asleep_sec": 99,
+      "seconds_per_state": {
+        "awake": 60,
+        "drowsy": 23,
+        "asleep": 99,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "single",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.3167,
+        "threshold": 0.1583,
+        "baseline_pitch": -7.7703
+      }
+    }
+  },
+  "definition": {
+    "face_sleep_seconds": 10,
+    "body_sleep_seconds": 45,
+    "wake_seconds": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video": "data\\videos\\clip04a_head_on_desk.mp4",
+  "summary": [
+    "Person 1 asleep 00:45-02:07 (total 01:22)"
+  ],
+  "people": {
+    "Person 1": {
+      "asleep_intervals": [
+        {
+          "start_sec": 45,
+          "end_sec": 127,
+          "start": "00:45",
+          "end": "02:07",
+          "duration_sec": 82,
+          "mean_confidence": 0.65
+        }
+      ],
+      "total_asleep_sec": 82,
+      "seconds_per_state": {
+        "awake": 81,
+        "drowsy": 19,
+        "asleep": 82,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "single",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.2945,
+        "threshold": 0.1472,
+        "baseline_pitch": -4.3149
+      }
+    }
+  },
+  "definition": {
+    "face_sleep_seconds": 10,
+    "body_sleep_seconds": 45,
+    "wake_seconds": 2
+  }
+}

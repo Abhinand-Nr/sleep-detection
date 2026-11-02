@@ -1,0 +1,425 @@
+time_sec,person,visible,face_visible,ear,head_pitch,motion,posture_flag,state,confidence,reason,closed_frac,perclos,kp_motion,n_kp,identity_source
+0,Abhinand,True,True,0.3472,12.6271,0.0,upright,awake,0.9,eyes open,0.0,,0.0017,9.0,face
+1,Abhinand,True,True,0.3244,4.8831,0.1039,upright,awake,0.9,eyes open,0.0,,0.0168,10.0,face
+2,Abhinand,True,True,0.2437,-2.6497,0.0532,upright,awake,0.9,eyes open,0.0,,0.0123,11.0,face
+3,Abhinand,True,True,0.2689,-2.6617,0.0376,upright,awake,0.9,eyes open,0.125,,0.0067,11.0,face
+4,Abhinand,True,True,0.1118,-1.6368,0.0187,upright,drowsy,0.6,eyes closed longer than a blink,0.625,,0.0073,11.0,face
+5,Abhinand,True,True,0.2757,-0.381,0.0154,upright,drowsy,0.6,eyes closed longer than a blink,0.1111,,0.0079,11.0,face
+6,Abhinand,True,True,0.2979,0.3955,0.002,upright,awake,0.9,eyes open,0.0,,0.0043,11.0,face
+7,Abhinand,True,True,0.2919,0.1315,0.0286,upright,awake,0.9,eyes open,0.0,,0.0083,11.0,face
+8,Abhinand,True,True,0.3039,-1.1059,0.0376,upright,awake,0.9,eyes open,0.125,,0.0089,11.0,face
+9,Abhinand,True,True,0.2537,1.6336,0.0113,upright,awake,0.9,eyes open,0.125,,0.0046,11.0,face
+10,Abhinand,True,True,0.2707,1.8837,0.0122,upright,awake,0.9,eyes open,0.0,,0.0068,11.0,face
+11,Abhinand,True,True,0.2902,0.8754,0.0016,upright,awake,0.9,eyes open,0.125,,0.0054,11.0,face
+12,Abhinand,True,True,0.301,0.7896,0.0019,upright,awake,0.9,eyes open,0.125,,0.0043,11.0,face
+13,Abhinand,True,True,0.3171,1.1986,0.0017,upright,awake,0.9,eyes open,0.0,,0.0027,11.0,face
+14,Abhinand,True,True,0.2909,1.0484,0.0019,upright,awake,0.9,eyes open,0.125,,0.0042,11.0,face
+15,Abhinand,True,True,0.3308,1.5561,0.0084,upright,awake,0.9,eyes open,0.0,,0.0027,11.0,face
+16,Abhinand,True,True,0.3268,1.4779,0.0031,upright,awake,0.9,eyes open,0.125,,0.003,11.0,face
+17,Abhinand,True,True,0.2921,1.4537,0.0197,upright,awake,0.9,eyes open,0.0,,0.0049,11.0,face
+18,Abhinand,True,True,0.2829,2.5762,0.024,upright,awake,0.9,eyes open,0.125,,0.0065,11.0,face
+19,Abhinand,True,True,0.0957,-0.1839,0.0602,upright,drowsy,0.6,eyes closed longer than a blink,0.75,,0.0134,11.0,face
+20,Abhinand,True,True,0.308,0.2755,0.0368,upright,awake,0.9,eyes open,0.0,,0.0059,11.0,face
+21,Abhinand,True,True,0.2663,-9.1407,0.0708,upright,drowsy,0.6,eyes closed longer than a blink,0.1111,,0.0125,11.0,face
+22,Abhinand,True,True,0.0179,-7.4009,0.0301,upright,drowsy,0.6,eyes closed longer than a blink,1.0,,0.0071,11.0,face
+23,Abhinand,True,True,0.023,-3.8673,0.0668,upright,drowsy,0.6,eyes closed longer than a blink,1.0,,0.0187,11.0,face
+24,Abhinand,True,True,0.0191,-0.4302,0.0086,upright,asleep,0.9,eyes closed + still 10s,1.0,,0.0055,11.0,face
+25,Abhinand,True,True,0.0208,-3.49,0.0003,upright,asleep,0.9,eyes closed + still 10s,1.0,,0.0026,11.0,face
+26,Abhinand,True,True,0.0139,-3.7351,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,,0.002,11.0,face
+27,Abhinand,True,True,0.0158,-3.6395,0.0001,upright,asleep,0.9,eyes closed + still 10s,1.0,,0.0019,11.0,face
+28,Abhinand,True,True,0.0172,-2.9283,0.0004,upright,asleep,0.9,eyes closed + still 10s,1.0,,0.0038,11.0,face
+29,Abhinand,True,True,0.0114,0.924,0.0001,upright,asleep,0.9,eyes closed + still 10s,1.0,0.3496,0.0025,11.0,face
+30,Abhinand,True,True,0.0139,5.3484,0.0013,upright,asleep,0.9,eyes closed + still 10s,1.0,0.3837,0.0031,11.0,face
+31,Abhinand,True,True,0.0188,9.9218,0.0012,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4187,0.0028,11.0,face
+32,Abhinand,True,True,0.0283,11.7333,0.0005,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4512,0.0035,11.0,face
+33,Abhinand,True,True,0.0311,16.504,0.0017,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4797,0.0031,11.0,face
+34,Abhinand,True,True,0.0357,21.9176,0.0002,upright,asleep,0.9,still asleep,1.0,0.4919,0.0038,11.0,face
+35,Abhinand,True,True,0.0494,24.03,0.0004,upright,asleep,0.9,still asleep,1.0,0.5224,0.0029,11.0,face
+36,Abhinand,True,True,0.0557,23.4234,0.0,upright,asleep,0.9,still asleep,1.0,0.5551,0.005,11.0,face
+37,Abhinand,True,True,0.07,24.1274,0.0004,upright,asleep,0.9,still asleep,1.0,0.5894,0.0027,11.0,face
+38,Abhinand,True,True,0.0575,24.0729,0.0,upright,asleep,0.9,still asleep,1.0,0.6179,0.0021,11.0,face
+39,Abhinand,True,True,0.0593,24.8809,0.0005,upright,asleep,0.9,still asleep,1.0,0.6405,0.0029,11.0,face
+40,Abhinand,True,True,,26.8459,0.0002,upright,asleep,0.9,still asleep,,0.6652,0.0027,11.0,face
+41,Abhinand,True,True,,27.2124,0.0018,upright,asleep,0.9,still asleep,,0.6844,0.0025,11.0,face
+42,Abhinand,True,True,,28.2975,0.0008,upright,asleep,0.9,still asleep,,0.7051,0.004,11.0,face
+43,Abhinand,True,True,,27.0537,0.0012,upright,asleep,0.9,still asleep,,0.7321,0.0031,11.0,face
+44,Abhinand,True,True,,26.962,0.0002,upright,asleep,0.9,still asleep,,0.7562,0.0034,11.0,face
+45,Abhinand,True,True,,27.1474,0.0008,upright,asleep,0.9,still asleep,,0.7917,0.0021,11.0,face
+46,Abhinand,True,True,,28.2233,0.0002,upright,asleep,0.9,still asleep,,0.8207,0.0025,11.0,face
+47,Abhinand,True,True,0.0658,25.8499,0.0003,upright,asleep,0.9,still asleep,1.0,0.8588,0.0039,11.0,face
+48,Abhinand,True,True,0.072,24.5761,0.0,upright,asleep,0.9,still asleep,1.0,0.8971,0.0021,11.0,face
+49,Abhinand,True,True,0.0715,25.4369,0.0009,upright,asleep,0.9,still asleep,1.0,0.9048,0.0024,11.0,face
+50,Abhinand,True,True,,27.6464,0.0015,upright,asleep,0.9,still asleep,,0.95,0.0024,11.0,face
+51,Abhinand,True,True,,28.2911,0.0006,upright,asleep,0.9,still asleep,,1.0,0.0021,11.0,face
+52,Abhinand,True,True,,28.4322,0.0,upright,asleep,0.9,still asleep,,1.0,0.0038,11.0,face
+53,Abhinand,True,True,0.1309,26.1219,0.0001,upright,asleep,0.9,still asleep,1.0,1.0,0.006,11.0,face
+54,Abhinand,True,True,,27.4919,0.0,upright,asleep,0.9,still asleep,,1.0,0.0027,11.0,face
+55,Abhinand,True,True,0.0878,26.4268,0.0006,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,11.0,face
+56,Abhinand,True,True,,27.5603,0.0001,upright,asleep,0.9,still asleep,,1.0,0.0022,11.0,face
+57,Abhinand,True,True,,28.331,0.0005,upright,asleep,0.9,still asleep,,1.0,0.0028,11.0,face
+58,Abhinand,True,True,,27.0297,0.0002,upright,asleep,0.9,still asleep,,1.0,0.0045,11.0,face
+59,Abhinand,True,True,,28.1448,0.0,upright,asleep,0.9,still asleep,,1.0,0.0024,11.0,face
+60,Abhinand,True,True,,28.8711,0.0,upright,asleep,0.9,still asleep,,1.0,0.0036,11.0,face
+61,Abhinand,True,True,,27.2652,0.0,upright,asleep,0.9,still asleep,,,0.0024,11.0,face
+62,Abhinand,True,True,0.175,6.3238,0.0107,upright,awake,0.9,woke up (eyes open 2s),0.4286,,0.0078,11.0,face
+63,Abhinand,True,True,0.2892,4.6989,0.0267,upright,awake,0.9,woke up (eyes open 2s),0.2222,,0.0263,11.0,face
+64,Abhinand,True,True,0.15,1.6217,0.0976,upright,drowsy,0.6,eyes closed longer than a blink,0.5,,0.0247,11.0,face
+65,Abhinand,True,True,0.2186,-11.0793,0.0653,upright,drowsy,0.6,head nodding,0.125,,0.013,11.0,face
+66,Abhinand,True,False,0.1904,-5.4932,0.0855,upright,drowsy,0.6,head nodding,0.0,,0.0231,11.0,face
+67,Abhinand,True,True,0.2313,-11.9361,0.0889,upright,awake,0.9,eyes open,0.25,,0.0159,11.0,face
+68,Abhinand,True,True,0.2334,-9.5477,0.1124,upright,awake,0.9,eyes open,0.2222,,0.0193,11.0,face
+69,Abhinand,True,True,0.148,-4.1079,0.0365,upright,drowsy,0.6,eyes closed longer than a blink,0.5,,0.0081,11.0,face
+70,Abhinand,True,True,0.1118,2.6076,0.0156,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.4675,0.0079,11.0,face
+71,Abhinand,True,True,0.0857,1.4495,0.0603,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5176,0.0207,11.0,face
+72,Abhinand,True,True,0.059,6.7126,0.0058,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5591,0.0034,11.0,face
+73,Abhinand,True,True,0.0578,7.7083,0.0007,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5941,0.0021,11.0,face
+74,Abhinand,True,True,0.1015,7.8365,0.0,upright,drowsy,0.6,eyes closed longer than a blink,0.5556,0.5909,0.0024,11.0,face
+75,Abhinand,True,True,0.3034,6.3641,0.0,upright,awake,0.9,eyes open,0.0,0.5508,0.0027,11.0,face
+76,Abhinand,True,True,0.231,3.799,0.0262,upright,awake,0.9,eyes open,0.0,0.5159,0.0115,10.5,face
+77,Abhinand,True,True,0.2517,5.8034,0.0216,upright,drowsy,0.6,eyes closed longer than a blink,0.25,0.4962,0.0243,10.0,face
+78,Abhinand,True,True,0.2617,6.8643,0.0048,upright,drowsy,0.6,eyes closed longer than a blink,0.375,0.4667,0.0115,9.5,face
+79,Abhinand,True,True,0.2812,5.7988,0.0527,upright,awake,0.9,eyes open,0.0,0.4336,0.006,10.0,face
+80,Abhinand,True,True,0.2612,7.4246,0.0419,upright,awake,0.9,eyes open,0.375,0.4305,0.0084,11.0,face
+81,Abhinand,True,True,0.279,6.4509,0.0663,upright,awake,0.9,eyes open,0.25,0.4258,0.012,10.0,face
+82,Abhinand,True,True,0.0641,6.5883,0.0138,upright,drowsy,0.6,eyes closed longer than a blink,0.875,0.4479,0.0045,11.0,face
+83,Abhinand,True,True,0.2584,5.2507,0.001,upright,awake,0.9,eyes open,0.0,0.4235,0.0024,11.0,face
+84,Abhinand,True,True,0.2504,5.2349,0.0019,upright,awake,0.9,eyes open,0.2222,0.4134,0.0026,11.0,face
+85,Abhinand,True,True,0.2532,4.9962,0.0016,upright,drowsy,0.6,eyes closed longer than a blink,0.375,0.4086,0.0023,11.0,face
+86,Abhinand,True,True,0.1116,6.4738,0.0302,upright,drowsy,0.6,eyes closed longer than a blink,0.75,0.4227,0.0055,11.0,face
+87,Abhinand,True,True,0.181,6.2053,0.0464,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.4257,0.0076,11.0,face
+88,Abhinand,True,True,0.2413,6.2805,0.0116,upright,awake,0.9,eyes open,0.0,0.4095,0.0059,11.0,face
+89,Abhinand,True,True,0.2418,5.2938,0.0222,upright,awake,0.9,eyes open,0.125,0.3991,0.008,11.0,face
+90,Abhinand,True,True,0.2619,2.9972,0.0133,upright,awake,0.9,eyes open,0.0,0.3833,0.0056,11.0,face
+91,Abhinand,True,True,0.2689,0.7792,0.0425,upright,awake,0.9,eyes open,0.125,0.3745,0.0092,11.0,face
+92,Abhinand,True,True,0.2009,1.698,0.0249,upright,awake,0.9,eyes open,0.0,0.3602,0.0065,11.0,face
+93,Abhinand,True,True,0.2409,1.8356,0.0008,upright,drowsy,0.6,PERCLOS 0.36,0.25,0.3617,0.0037,11.0,face
+94,Abhinand,True,True,0.2673,2.4127,0.0002,upright,drowsy,0.6,PERCLOS 0.34,0.0,0.3447,0.0034,11.0,face
+95,Abhinand,True,True,0.271,2.5003,0.001,upright,drowsy,0.6,PERCLOS 0.35,0.3333,0.3517,0.0033,11.0,face
+96,Abhinand,True,True,0.1287,4.1627,0.0274,upright,drowsy,0.6,eyes closed longer than a blink,0.75,0.3678,0.0057,11.0,face
+97,Abhinand,True,True,0.2324,1.7261,0.0563,upright,drowsy,0.6,PERCLOS 0.36,0.0,0.3595,0.0091,11.0,face
+98,Abhinand,True,True,0.2367,1.6207,0.0391,upright,drowsy,0.6,PERCLOS 0.35,0.0,0.3527,0.0051,11.0,face
+99,Abhinand,True,True,0.2852,1.5007,0.0581,upright,drowsy,0.6,PERCLOS 0.34,0.0,0.3361,0.0106,11.0,face
+100,Abhinand,True,True,0.2615,-0.2055,0.0298,upright,drowsy,0.6,PERCLOS 0.30,0.0,0.3017,0.0062,11.0,face
+101,Abhinand,True,True,0.2812,1.2663,0.0501,upright,awake,0.9,eyes open,0.25,0.2769,0.0069,11.0,face
+102,Abhinand,True,True,0.1505,3.9766,0.0533,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.2603,0.0123,11.0,face
+103,Abhinand,True,True,0.2701,2.9627,0.0465,upright,awake,0.9,eyes open,0.125,0.2314,0.0072,11.0,face
+104,Abhinand,True,True,0.2529,4.8744,0.047,upright,awake,0.9,eyes open,0.125,0.2158,0.0075,11.0,face
+105,Abhinand,True,True,0.2651,1.9088,0.074,upright,awake,0.9,eyes open,0.1111,0.219,0.0098,11.0,face
+106,Abhinand,True,True,0.1501,4.4544,0.0612,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.2355,0.0067,11.0,face
+107,Abhinand,True,True,0.245,3.7846,0.0959,upright,drowsy,0.6,head nodding,0.1429,0.2324,0.02,11.0,face
+108,Abhinand,True,True,0.2691,11.6926,0.0574,head_on_arms,drowsy,0.6,head nodding,0.375,0.2324,0.0064,11.0,face
+109,Abhinand,True,True,0.1521,11.9217,0.1025,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.25,0.0142,11.0,face
+110,Abhinand,True,True,0.268,8.0984,0.0691,upright,drowsy,0.6,head nodding,0.0,0.2375,0.0137,11.0,face
+111,Abhinand,True,True,0.1144,4.4994,0.073,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2653,0.0124,11.0,face
+112,Abhinand,True,True,0.1047,2.0679,0.0579,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.2694,0.0096,11.0,face
+113,Abhinand,True,True,0.1038,3.4137,0.0695,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.302,0.0134,11.0,face
+114,Abhinand,True,True,0.1648,6.2284,0.0886,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.3115,0.0122,11.0,face
+115,Abhinand,True,True,0.0927,2.8073,0.0609,upright,drowsy,0.6,eyes closed longer than a blink,0.875,0.3279,0.0096,10.5,face
+116,Abhinand,True,True,0.2855,1.6004,0.046,upright,drowsy,0.6,PERCLOS 0.31,0.2222,0.3102,0.0074,11.0,face
+117,Abhinand,True,True,0.2887,0.9501,0.0367,upright,awake,0.9,eyes open,0.0,0.2939,0.0081,11.0,face
+118,Abhinand,True,True,0.2077,2.0047,0.0261,upright,drowsy,0.6,PERCLOS 0.30,0.25,0.302,0.005,11.0,face
+119,Abhinand,True,True,0.2798,2.6194,0.043,upright,awake,0.9,eyes open,0.0,0.298,0.0121,11.0,face
+120,Abhinand,True,True,0.2584,2.3846,0.1375,upright,awake,0.9,eyes open,0.0,0.2992,0.0348,9.0,face
+121,Abhinand,True,True,0.2211,3.8377,0.0202,upright,drowsy,0.6,eyes closed longer than a blink,0.4444,0.3102,0.0118,9.0,face
+122,Abhinand,True,True,0.1072,8.3772,0.0041,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3429,0.0042,9.0,face
+123,Abhinand,True,True,0.0817,9.7744,0.0009,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3673,0.0036,9.0,face
+124,Abhinand,True,True,0.2548,8.6802,0.0025,upright,drowsy,0.6,eyes closed longer than a blink,0.125,0.3714,0.0042,9.0,face
+125,Abhinand,True,True,0.3226,6.5156,0.0029,upright,drowsy,0.6,PERCLOS 0.36,0.0,0.3607,0.0059,9.0,face
+126,Abhinand,True,True,0.2843,5.2942,0.0085,upright,drowsy,0.6,PERCLOS 0.34,0.0,0.3361,0.006,9.0,face
+127,Abhinand,True,True,0.1751,4.1498,0.0512,upright,drowsy,0.6,PERCLOS 0.35,0.4444,0.351,0.0108,9.0,face
+128,Abhinand,True,True,0.1689,3.4412,0.049,upright,drowsy,0.6,PERCLOS 0.36,0.125,0.3551,0.0129,8.0,face
+129,Abhinand,True,True,,5.9919,0.0806,upright,drowsy,0.6,PERCLOS 0.37,,0.3671,0.02,10.0,face
+130,Abhinand,True,False,,,0.0132,upright,drowsy,0.6,PERCLOS 0.38,,0.3816,0.0063,10.0,face
+131,Abhinand,True,False,,6.3798,0.0298,upright,drowsy,0.6,PERCLOS 0.39,,0.3864,0.0119,10.0,face
+132,Abhinand,True,True,0.1224,8.7138,0.074,upright,drowsy,0.6,eyes closed longer than a blink,0.5556,0.3891,0.0255,10.0,face
+133,Abhinand,True,True,0.3667,15.9026,0.0339,upright,drowsy,0.6,PERCLOS 0.39,0.125,0.3891,0.0092,11.0,face
+134,Abhinand,True,True,0.3197,9.2509,0.0138,upright,drowsy,0.6,PERCLOS 0.38,0.0,0.3846,0.0059,11.0,face
+135,Abhinand,True,True,0.3444,7.0133,0.0037,upright,drowsy,0.6,PERCLOS 0.38,0.0,0.3818,0.0042,11.0,face
+136,Abhinand,True,True,0.2638,13.1593,0.0172,upright,drowsy,0.6,PERCLOS 0.36,0.0,0.3636,0.0061,11.0,face
+137,Abhinand,True,True,0.1138,15.7959,0.0956,upright,drowsy,0.6,eyes closed longer than a blink,0.7778,0.3874,0.0149,11.0,face
+138,Abhinand,True,True,0.2158,13.7823,0.1326,upright,drowsy,0.6,PERCLOS 0.37,0.0,0.3739,0.02,11.0,face
+139,Abhinand,True,True,0.1845,14.9275,0.0217,upright,drowsy,0.6,PERCLOS 0.36,0.25,0.3649,0.0092,10.0,face
+140,Abhinand,True,True,0.1607,15.7929,0.0029,upright,drowsy,0.6,PERCLOS 0.38,0.375,0.3784,0.0071,10.0,face
+141,Abhinand,True,True,0.1532,16.3689,0.001,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.3575,0.0056,10.0,face
+142,Abhinand,True,True,0.0989,17.1531,0.0057,upright,drowsy,0.6,eyes closed longer than a blink,0.875,0.3529,0.0073,11.0,face
+143,Abhinand,True,True,0.0565,12.6288,0.0459,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3559,0.0207,11.0,face
+144,Abhinand,True,True,0.0569,10.7574,0.0092,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3739,0.0078,11.0,face
+145,Abhinand,True,True,0.2235,11.411,0.0032,upright,drowsy,0.6,eyes closed longer than a blink,0.375,0.3559,0.0065,11.0,face
+146,Abhinand,True,True,0.0995,8.4269,0.0193,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.3846,0.0063,11.0,face
+147,Abhinand,True,True,0.0874,6.698,0.0219,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.4208,0.0088,11.0,face
+148,Abhinand,True,True,0.1206,7.3963,0.0118,upright,drowsy,0.6,eyes closed longer than a blink,0.8889,0.4459,0.0115,11.0,face
+149,Abhinand,True,True,0.077,5.589,0.0065,upright,drowsy,0.6,eyes closed longer than a blink,0.625,0.4685,0.006,11.0,face
+150,Abhinand,True,True,0.0596,5.2545,0.0052,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5045,0.0135,11.0,face
+151,Abhinand,True,True,0.0434,6.1887,0.0093,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5249,0.0087,11.0,face
+152,Abhinand,True,True,0.054,8.7094,0.0005,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5249,0.0035,11.0,face
+153,Abhinand,True,True,0.2788,8.0046,0.0015,upright,drowsy,0.6,PERCLOS 0.49,0.0,0.4865,0.0036,11.0,face
+154,Abhinand,True,True,0.2467,7.887,0.0007,upright,drowsy,0.6,PERCLOS 0.48,0.0,0.482,0.0046,11.0,face
+155,Abhinand,True,True,0.245,9.1377,0.0213,upright,drowsy,0.6,PERCLOS 0.49,0.25,0.491,0.0078,11.0,face
+156,Abhinand,True,True,0.2679,8.6742,0.0152,upright,drowsy,0.6,PERCLOS 0.49,0.0,0.491,0.0063,11.0,face
+157,Abhinand,True,True,0.1643,6.3884,0.0099,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.4932,0.006,11.0,face
+158,Abhinand,True,True,0.0148,5.682,0.0004,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.527,0.0053,11.0,face
+159,Abhinand,True,True,0.0144,6.1141,0.0004,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5435,0.003,11.0,face
+160,Abhinand,True,True,0.018,8.2873,0.0013,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5588,0.0038,11.0,face
+161,Abhinand,True,True,0.0262,14.0626,0.0007,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5732,0.003,11.0,face
+162,Abhinand,True,True,0.0299,16.0912,0.0002,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.5878,0.0039,11.0,face
+163,Abhinand,True,True,0.0398,14.0984,0.0068,upright,drowsy,0.6,eyes closed longer than a blink,0.625,0.6041,0.0049,11.0,face
+164,Abhinand,True,True,0.1775,2.4564,0.0048,upright,drowsy,0.6,PERCLOS 0.62,0.4444,0.6179,0.005,11.0,face
+165,Abhinand,True,True,0.2772,3.3651,0.0023,upright,drowsy,0.6,PERCLOS 0.62,0.0,0.6179,0.0058,11.0,face
+166,Abhinand,True,True,0.245,4.0098,0.0011,upright,drowsy,0.6,PERCLOS 0.62,0.125,0.622,0.0045,11.0,face
+167,Abhinand,True,True,0.1652,-2.5503,0.0008,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.6122,0.0045,11.0,face
+168,Abhinand,True,True,0.0261,-5.8767,0.0002,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6449,0.0042,11.0,face
+169,Abhinand,True,True,0.0208,-5.5341,0.0003,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6707,0.0033,11.0,face
+170,Abhinand,True,True,0.0204,-0.3905,0.0022,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6911,0.0039,11.0,face
+171,Abhinand,True,True,0.0173,1.7575,0.0023,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.7073,0.005,11.0,face
+172,Abhinand,True,True,0.0131,3.5714,0.0,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.7114,0.0033,11.0,face
+173,Abhinand,True,True,0.0204,3.7867,0.0019,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.7102,0.0022,11.0,face
+174,Abhinand,True,True,0.0153,5.0735,0.0004,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.7114,0.003,11.0,face
+175,Abhinand,True,True,0.0152,5.9902,0.0019,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.7317,0.0034,11.0,face
+176,Abhinand,True,True,0.251,0.7666,0.0037,upright,drowsy,0.6,eyes closed longer than a blink,0.25,0.7073,0.0044,11.0,face
+177,Abhinand,True,True,0.3024,3.096,0.0022,upright,drowsy,0.6,PERCLOS 0.68,0.125,0.6789,0.0044,11.0,face
+178,Abhinand,True,True,0.2503,4.2777,0.0295,upright,drowsy,0.6,PERCLOS 0.65,0.125,0.6531,0.0083,11.0,face
+179,Abhinand,True,True,0.2402,3.5704,0.0165,upright,drowsy,0.6,PERCLOS 0.64,0.125,0.6367,0.0107,11.0,face
+180,Abhinand,True,True,0.2334,-0.2159,0.0558,upright,drowsy,0.6,eyes closed longer than a blink,0.3333,0.6138,0.01,11.0,face
+181,Abhinand,True,True,0.1182,4.0111,0.0675,upright,drowsy,0.6,eyes closed longer than a blink,0.625,0.6016,0.0147,11.0,face
+182,Abhinand,True,True,0.1146,4.7971,0.0099,upright,drowsy,0.6,eyes closed longer than a blink,0.875,0.5976,0.0053,11.0,face
+183,Abhinand,True,True,0.1674,6.394,0.0884,upright,drowsy,0.6,eyes closed longer than a blink,0.25,0.6082,0.0205,11.0,face
+184,Abhinand,True,True,0.1463,12.5039,0.0214,upright,drowsy,0.6,eyes closed longer than a blink,0.5,0.6245,0.0087,11.0,face
+185,Abhinand,True,True,0.2674,12.8116,0.0419,upright,drowsy,0.6,PERCLOS 0.61,0.0,0.6138,0.014,11.0,face
+186,Abhinand,True,True,0.0527,13.3932,0.0164,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6463,0.0066,9.0,face
+187,Abhinand,True,True,0.054,24.405,0.0176,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6584,0.0078,8.5,face
+188,Abhinand,True,True,0.1141,25.8589,0.0034,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6483,0.0049,8.0,face
+189,Abhinand,True,True,0.0664,22.197,0.0226,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.6483,0.0109,8.0,face
+190,Abhinand,True,True,0.2684,10.7143,0.0332,upright,drowsy,0.6,PERCLOS 0.61,0.0,0.6118,0.0165,8.0,face
+191,Abhinand,True,True,0.1657,6.9615,0.0413,upright,drowsy,0.6,PERCLOS 0.59,0.375,0.5907,0.0198,9.0,face
+192,Abhinand,True,True,0.1649,5.1277,0.0062,upright,drowsy,0.6,PERCLOS 0.56,0.125,0.5612,0.0064,7.0,face
+193,Abhinand,True,True,0.1818,0.885,0.0196,upright,drowsy,0.6,PERCLOS 0.55,0.375,0.5527,0.0124,10.5,face
+194,Abhinand,True,True,0.2492,-0.8923,0.0047,upright,drowsy,0.6,PERCLOS 0.54,0.125,0.5424,0.0092,10.0,face
+195,Abhinand,True,True,0.2487,-6.5589,0.0157,upright,drowsy,0.6,PERCLOS 0.54,0.0,0.5424,0.0155,10.5,face
+196,Abhinand,True,True,0.242,-7.5958,0.1372,upright,drowsy,0.6,PERCLOS 0.54,0.0,0.5359,0.0233,11.0,face
+197,Abhinand,True,True,0.2188,-2.5042,0.0197,upright,drowsy,0.6,PERCLOS 0.53,0.25,0.5274,0.01,11.0,face
+198,Abhinand,True,True,0.2835,7.5359,0.0269,upright,drowsy,0.6,PERCLOS 0.50,0.25,0.5021,0.0078,11.0,face
+199,Abhinand,True,True,0.2844,3.5579,0.0137,upright,drowsy,0.6,PERCLOS 0.47,0.0,0.4661,0.0031,11.0,face
+200,Abhinand,True,True,0.2586,2.8177,0.0021,upright,drowsy,0.6,PERCLOS 0.43,0.0,0.4322,0.0022,11.0,face
+201,Abhinand,True,True,0.26,5.1929,0.0004,upright,drowsy,0.6,PERCLOS 0.40,0.0,0.3966,0.0015,11.0,face
+202,Abhinand,True,True,0.2574,5.7817,0.0003,upright,drowsy,0.6,PERCLOS 0.36,0.0,0.3629,0.0016,11.0,face
+203,Abhinand,True,True,0.2511,6.51,0.0002,upright,drowsy,0.6,PERCLOS 0.33,0.0,0.3291,0.0014,11.0,face
+204,Abhinand,True,True,0.2351,5.5173,0.0012,upright,awake,0.9,eyes open,0.125,0.2966,0.0015,11.0,face
+205,Abhinand,True,True,0.2623,4.7373,0.0414,upright,awake,0.9,eyes open,0.0,0.2627,0.0077,11.0,face
+206,Abhinand,True,True,0.2445,2.3466,0.0765,upright,awake,0.9,eyes open,0.0,0.2532,0.012,10.0,face
+207,Abhinand,True,True,0.2591,2.6939,0.0411,upright,awake,0.9,eyes open,0.125,0.2532,0.0109,11.0,face
+208,Abhinand,True,True,0.2388,3.3025,0.0465,upright,awake,0.9,eyes open,0.0,0.2489,0.0125,11.0,face
+209,Abhinand,True,True,0.1778,-1.5862,0.088,upright,drowsy,0.6,eyes closed longer than a blink,0.375,0.2574,0.0191,11.0,face
+210,Abhinand,True,True,0.1404,2.4612,0.0173,upright,drowsy,0.6,eyes closed longer than a blink,0.625,0.2669,0.0048,11.0,face
+211,Abhinand,True,True,0.2665,2.3818,0.0011,upright,awake,0.9,eyes open,0.0,0.2458,0.0035,10.0,face
+0,Rajni,True,True,0.2938,5.2748,0.2322,upright,awake,0.9,eyes open,0.1111,,0.0183,10.0,face
+1,Rajni,True,True,0.2545,6.2544,0.129,upright,awake,0.9,eyes open,0.0,,0.0125,9.0,face
+2,Rajni,True,True,0.2699,0.684,0.0059,upright,awake,0.9,eyes open,0.125,,0.0037,10.0,face
+3,Rajni,True,True,0.2856,-0.8485,0.0,upright,awake,0.9,eyes open,0.0,,0.0039,9.0,face
+4,Rajni,True,True,0.2808,-0.8991,0.0,upright,awake,0.9,eyes open,0.0,,0.0017,10.0,face
+5,Rajni,True,True,0.29,-0.7794,0.0,upright,awake,0.9,eyes open,0.0,,0.0022,10.0,face
+6,Rajni,True,True,0.2785,0.1121,0.0,upright,awake,0.9,eyes open,0.0,,0.0016,10.0,face
+7,Rajni,True,True,0.2783,0.2655,0.0,upright,awake,0.9,eyes open,0.125,,0.0019,10.0,face
+8,Rajni,True,True,0.2875,-0.1327,0.0,upright,awake,0.9,eyes open,0.0,,0.0017,10.0,face
+9,Rajni,True,True,0.2506,0.0378,0.0,upright,awake,0.9,eyes open,0.0,,0.0018,10.0,face
+10,Rajni,True,True,0.2433,0.1045,0.0001,upright,awake,0.9,eyes open,0.2222,,0.002,10.0,face
+11,Rajni,True,True,0.242,-0.3675,0.0004,upright,awake,0.9,eyes open,0.0,,0.0018,10.0,face
+12,Rajni,True,True,0.2407,-0.817,0.003,upright,awake,0.9,eyes open,0.125,,0.0023,10.0,face
+13,Rajni,True,True,0.2477,-1.5294,0.003,upright,awake,0.9,eyes open,0.0,,0.0018,9.5,face
+14,Rajni,True,True,0.2658,-1.759,0.0,upright,awake,0.9,eyes open,0.0,,0.0021,10.0,face
+15,Rajni,True,True,0.2814,-1.576,0.0,upright,awake,0.9,eyes open,0.0,,0.0014,10.0,face
+16,Rajni,True,True,0.2833,-2.3078,0.0,upright,awake,0.9,eyes open,0.0,,0.0038,10.0,face
+17,Rajni,True,True,0.2632,-4.4143,0.0388,upright,awake,0.9,eyes open,0.125,,0.0063,10.0,face
+18,Rajni,True,True,0.0208,-5.0655,0.0158,upright,drowsy,0.6,eyes closed longer than a blink,0.75,,0.0041,9.0,face
+19,Rajni,True,True,0.2214,-4.811,0.0,upright,drowsy,0.6,eyes closed longer than a blink,0.375,,0.0018,10.0,face
+20,Rajni,True,True,0.2402,-5.1313,0.0,upright,awake,0.9,eyes open,0.0,,0.0014,8.0,face
+21,Rajni,True,True,0.2487,-5.1112,0.0,upright,awake,0.9,eyes open,0.0,,0.0018,10.0,face
+22,Rajni,True,True,0.251,-5.3606,0.0,upright,awake,0.9,eyes open,0.0,,0.0012,9.5,face
+23,Rajni,True,True,0.253,-5.3686,0.0,upright,awake,0.9,eyes open,0.125,,0.0015,9.0,face
+24,Rajni,True,True,0.2639,-5.3775,0.0,upright,awake,0.9,eyes open,0.0,,0.0014,10.0,face
+25,Rajni,True,True,0.2596,-4.5897,0.0,upright,awake,0.9,eyes open,0.0,,0.0014,10.0,face
+26,Rajni,True,True,0.2387,-4.4603,0.0,upright,awake,0.9,eyes open,0.2222,,0.0018,10.0,face
+27,Rajni,True,True,0.2487,-4.6384,0.0,upright,awake,0.9,eyes open,0.0,,0.0014,10.0,face
+28,Rajni,True,True,0.2854,0.8622,0.0035,upright,awake,0.9,eyes open,0.125,,0.0025,10.0,face
+29,Rajni,True,True,0.2905,0.8301,0.0,upright,awake,0.9,eyes open,0.125,0.0854,0.0018,9.0,face
+30,Rajni,True,True,0.2726,1.7586,0.0565,upright,awake,0.9,eyes open,0.0,0.0816,0.0099,11.0,face
+31,Rajni,True,True,0.2633,1.4735,0.0017,upright,awake,0.9,eyes open,0.0,0.0813,0.0032,11.0,face
+32,Rajni,True,True,0.2809,4.749,0.0133,upright,awake,0.9,eyes open,0.0,0.0776,0.0111,11.0,face
+33,Rajni,True,True,0.3087,1.6906,0.102,upright,drowsy,0.6,head nodding,0.0,0.0776,0.018,10.0,face
+34,Rajni,True,True,0.3018,-3.8268,0.0133,upright,drowsy,0.6,head nodding,0.125,0.0816,0.0036,10.0,face
+35,Rajni,True,True,0.3041,-3.909,0.0001,upright,drowsy,0.6,head nodding,0.0,0.082,0.002,10.0,face
+36,Rajni,True,True,0.2921,-4.7921,0.0,upright,drowsy,0.6,head nodding,0.125,0.0861,0.0018,10.0,face
+37,Rajni,True,True,0.2747,-3.7277,0.0,upright,drowsy,0.6,head nodding,0.1111,0.0857,0.0017,10.0,face
+38,Rajni,True,True,0.2787,-4.0702,0.0193,upright,awake,0.9,eyes open,0.0,0.0857,0.0041,8.5,face
+39,Rajni,True,True,0.2725,-4.8429,0.0018,upright,awake,0.9,eyes open,0.125,0.0898,0.0026,8.0,face
+40,Rajni,True,True,0.2811,-3.6414,0.0008,upright,awake,0.9,eyes open,0.0,0.082,0.0021,8.0,face
+41,Rajni,True,True,0.2833,-1.9543,0.0,upright,awake,0.9,eyes open,0.0,0.082,0.0019,8.0,face
+42,Rajni,True,True,0.2997,-1.375,0.0,upright,awake,0.9,eyes open,0.1111,0.0816,0.0015,9.0,face
+43,Rajni,True,True,0.2523,-6.569,0.0369,upright,awake,0.9,eyes open,0.125,0.0857,0.0057,9.0,face
+44,Rajni,True,True,0.3126,-4.7773,0.0068,upright,awake,0.9,eyes open,0.0,0.0857,0.0032,10.0,face
+45,Rajni,True,True,0.235,-4.8028,0.0005,upright,awake,0.9,eyes open,0.125,0.0902,0.0025,10.0,face
+46,Rajni,True,True,0.2687,-4.6014,0.0001,upright,awake,0.9,eyes open,0.125,0.0943,0.0021,10.0,face
+47,Rajni,True,True,0.2735,-3.1092,0.009,upright,awake,0.9,eyes open,0.0,0.0898,0.0032,9.0,face
+48,Rajni,True,True,0.2827,-2.6721,0.0004,upright,awake,0.9,eyes open,0.0,0.0653,0.0014,9.0,face
+49,Rajni,True,True,0.318,-2.6015,0.0002,upright,awake,0.9,eyes open,0.125,0.0571,0.0016,8.0,face
+50,Rajni,True,True,0.2744,-3.8147,0.0,upright,awake,0.9,eyes open,0.0,0.0571,0.0013,9.0,face
+51,Rajni,True,True,0.2868,-4.8713,0.0,upright,awake,0.9,eyes open,0.0,0.0574,0.0015,9.0,face
+52,Rajni,True,True,0.2789,-3.9203,0.0,upright,awake,0.9,eyes open,0.1111,0.0612,0.0019,9.0,face
+53,Rajni,True,True,0.2764,-3.745,0.0,upright,awake,0.9,eyes open,0.0,0.0571,0.0016,9.5,face
+54,Rajni,True,True,0.2709,-4.5059,0.0,upright,awake,0.9,eyes open,0.0,0.0571,0.0016,10.0,face
+55,Rajni,True,True,0.2694,-3.9679,0.0,upright,awake,0.9,eyes open,0.0,0.0571,0.0012,10.0,face
+56,Rajni,True,True,0.2651,-4.516,0.0,upright,awake,0.9,eyes open,0.0,0.0492,0.0017,10.0,face
+57,Rajni,True,True,0.2611,-3.2332,0.0,upright,awake,0.9,eyes open,0.125,0.0533,0.0017,9.0,face
+58,Rajni,True,True,0.2945,-1.2475,0.0311,upright,awake,0.9,eyes open,0.0,0.049,0.0054,9.0,face
+59,Rajni,True,True,0.2468,-2.1686,0.1207,upright,awake,0.9,eyes open,0.125,0.049,0.0108,8.0,face
+60,Rajni,True,True,0.283,0.0406,0.0744,upright,awake,0.9,eyes open,0.0,0.049,0.0148,8.0,face
+61,Rajni,True,True,0.3007,-0.2521,0.0289,upright,awake,0.9,eyes open,0.0,0.0492,0.0049,8.0,face
+62,Rajni,True,True,0.2464,-14.7954,0.1276,upright,awake,0.9,eyes open,0.0,0.049,0.0189,8.5,face
+63,Rajni,True,True,0.2827,0.107,0.0153,upright,awake,0.9,eyes open,0.0,0.0492,0.0044,10.0,face
+64,Rajni,True,True,0.2621,0.4456,0.0312,upright,awake,0.9,eyes open,0.0,0.0458,0.0142,8.0,face
+65,Rajni,True,True,0.1588,2.3516,0.0,upright,awake,0.5,no sleep evidence yet,0.0,0.0472,0.0022,8.0,face
+66,Rajni,True,True,0.2513,-3.2061,0.0932,upright,awake,0.9,eyes open,0.125,0.0472,0.011,9.5,face
+67,Rajni,True,True,0.2679,-5.4866,0.0576,upright,awake,0.9,eyes open,0.25,0.0517,0.0079,9.0,face
+68,Rajni,True,True,0.2479,-6.1145,0.0132,upright,awake,0.9,eyes open,0.0,0.0515,0.0045,9.0,face
+69,Rajni,True,True,0.2492,-9.2236,0.0,upright,awake,0.9,eyes open,0.125,0.0515,0.0018,9.0,face
+70,Rajni,True,True,0.2531,-8.8724,0.0004,upright,awake,0.9,eyes open,0.0,0.0515,0.0021,9.0,face
+71,Rajni,True,True,0.2628,-7.9706,0.0001,upright,awake,0.9,eyes open,0.0,0.0515,0.0023,9.0,face
+72,Rajni,True,True,0.2196,-8.9244,0.0018,upright,awake,0.9,eyes open,0.125,0.0517,0.0018,9.0,face
+73,Rajni,True,True,0.2396,-7.2178,0.0001,upright,drowsy,0.6,eyes closed longer than a blink,0.125,0.0517,0.0017,9.0,face
+74,Rajni,True,True,0.0493,-4.9482,0.1894,upright,drowsy,0.6,eyes closed longer than a blink,1.0,0.0901,0.0142,9.0,face
+75,Rajni,True,True,0.2066,4.3236,0.3067,upright,awake,0.9,eyes open,0.0,0.0858,0.0485,8.0,face
+76,Rajni,True,True,0.2611,16.5713,0.0948,slumped,drowsy,0.6,head nodding,0.0,0.0815,0.0251,7.5,face
+77,Rajni,True,True,0.0746,16.9253,0.0,unknown,drowsy,0.6,eyes closed longer than a blink,0.75,0.1078,0.0055,5.0,face
+78,Rajni,True,True,0.2883,18.6094,0.0,unknown,drowsy,0.6,eyes closed longer than a blink,0.125,0.1121,0.0045,5.0,face
+79,Rajni,True,True,0.2438,-1.251,0.3954,upright,drowsy,0.6,head nodding,0.0,0.1073,0.0388,11.0,face
+80,Rajni,True,True,0.2394,-4.0672,0.068,upright,drowsy,0.6,head nodding,0.0,0.1073,0.0084,10.0,face
+81,Rajni,True,True,0.2431,-5.2078,0.0315,upright,drowsy,0.6,head nodding,0.25,0.1159,0.006,9.0,face
+82,Rajni,True,True,0.0332,-9.2235,0.0221,upright,drowsy,0.6,eyes closed longer than a blink,0.875,0.1422,0.0045,9.0,face
+83,Rajni,True,True,0.0266,-11.8886,0.0036,upright,asleep,0.9,eyes closed + still 10s,0.875,0.1724,0.0024,9.0,face
+84,Rajni,True,True,0.0333,-10.276,0.0011,upright,asleep,0.9,eyes closed + still 10s,0.7778,0.2017,0.0024,9.0,face
+85,Rajni,True,True,0.0214,-10.2561,0.0008,upright,asleep,0.9,eyes closed + still 10s,1.0,0.2361,0.0018,8.5,face
+86,Rajni,True,True,0.0171,-9.4239,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.2704,0.0016,8.0,face
+87,Rajni,True,True,0.0183,-8.447,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.3004,0.002,9.0,face
+88,Rajni,True,True,0.0203,-8.1856,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.3362,0.0016,9.0,face
+89,Rajni,True,True,0.0208,-6.5301,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.3664,0.0023,9.0,face
+90,Rajni,True,True,0.0185,-4.5815,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4034,0.0016,9.0,face
+91,Rajni,True,True,0.021,-4.7688,0.0001,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4378,0.0017,9.0,face
+92,Rajni,True,True,0.0168,-2.4384,0.0005,upright,asleep,0.9,eyes closed + still 10s,1.0,0.4721,0.0022,9.0,face
+93,Rajni,True,True,0.0388,0.7521,0.0005,upright,asleep,0.9,still asleep,1.0,0.5043,0.0021,9.0,face
+94,Rajni,True,True,0.0356,1.7223,0.0,upright,asleep,0.9,still asleep,1.0,0.5294,0.0016,8.0,face
+95,Rajni,True,True,0.0343,2.2187,0.0004,upright,asleep,0.9,still asleep,1.0,0.5488,0.002,9.0,face
+96,Rajni,True,True,0.0406,4.8969,0.0001,upright,asleep,0.9,still asleep,1.0,0.5772,0.0023,9.0,face
+97,Rajni,True,True,0.0461,7.9598,0.0003,upright,asleep,0.9,still asleep,1.0,0.6016,0.0027,9.0,face
+98,Rajni,True,True,0.0341,7.6601,0.0005,upright,asleep,0.9,still asleep,1.0,0.6367,0.0025,10.0,face
+99,Rajni,True,True,0.0467,7.5838,0.0,upright,asleep,0.9,still asleep,1.0,0.6653,0.0019,9.5,face
+100,Rajni,True,True,0.0557,8.3411,0.0,upright,asleep,0.9,still asleep,1.0,0.6992,0.0019,9.0,face
+101,Rajni,True,True,0.0603,9.9271,0.0,upright,asleep,0.9,still asleep,1.0,0.7317,0.0024,10.0,face
+102,Rajni,True,True,0.0574,10.7223,0.0,upright,asleep,0.9,still asleep,1.0,0.7602,0.0021,10.0,face
+103,Rajni,True,True,0.0467,10.7305,0.0,upright,asleep,0.9,still asleep,1.0,0.7886,0.0017,10.0,face
+104,Rajni,True,True,0.0427,9.9521,0.0,upright,asleep,0.9,still asleep,1.0,0.7878,0.0021,10.0,face
+105,Rajni,True,True,0.0603,8.7742,0.0,upright,asleep,0.9,still asleep,1.0,0.8211,0.0023,10.0,face
+106,Rajni,True,True,0.0507,9.1139,0.0,upright,asleep,0.9,still asleep,1.0,0.8537,0.002,10.0,face
+107,Rajni,True,True,0.0613,10.9546,0.0,upright,asleep,0.9,still asleep,1.0,0.8618,0.0019,10.0,face
+108,Rajni,True,True,0.0754,11.9709,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0024,10.0,face
+109,Rajni,True,True,0.0599,11.9453,0.0,upright,asleep,0.9,still asleep,1.0,0.9265,0.0024,10.0,face
+110,Rajni,True,True,0.0501,12.298,0.0,upright,asleep,0.9,still asleep,1.0,0.9592,0.0028,10.0,face
+111,Rajni,True,True,0.0552,12.1139,0.0,upright,asleep,0.9,still asleep,1.0,0.9837,0.0023,10.0,face
+112,Rajni,True,True,0.0613,11.5748,0.0,upright,asleep,0.9,still asleep,1.0,0.9878,0.0024,10.0,face
+113,Rajni,True,True,0.0807,11.3485,0.0,upright,asleep,0.9,still asleep,1.0,0.9919,0.0027,10.0,face
+114,Rajni,True,True,0.0783,12.7992,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0022,10.0,face
+115,Rajni,True,True,0.0649,12.0138,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+116,Rajni,True,True,0.067,13.0053,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0026,10.0,face
+117,Rajni,True,True,0.0858,11.9721,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0023,10.0,face
+118,Rajni,True,True,0.0845,12.3155,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0024,10.0,face
+119,Rajni,True,True,0.0997,13.3632,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0028,10.0,face
+120,Rajni,True,True,0.0766,11.7182,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0032,10.0,face
+121,Rajni,True,True,0.0803,11.7602,0.0174,upright,asleep,0.9,still asleep,1.0,1.0,0.0081,10.0,face
+122,Rajni,True,True,0.0892,10.8749,0.0021,upright,asleep,0.9,still asleep,1.0,1.0,0.0069,10.0,face
+123,Rajni,True,True,0.1156,10.5136,0.0006,upright,asleep,0.9,still asleep,0.875,0.9959,0.0055,9.5,face
+124,Rajni,True,True,0.1092,11.2092,0.0013,upright,asleep,0.9,still asleep,1.0,0.9959,0.0041,10.0,face
+125,Rajni,True,True,0.1982,10.9164,0.0033,upright,awake,0.9,woke up (eyes open 2s),0.125,0.9673,0.0075,10.0,face
+126,Rajni,True,True,0.2463,0.7393,0.0445,upright,awake,0.9,woke up (eyes open 2s),0.0,0.9347,0.0127,10.0,face
+127,Rajni,True,True,0.2859,-3.1476,0.1083,upright,awake,0.9,eyes open,0.0,0.8984,0.0101,8.0,face
+128,Rajni,True,True,0.0926,-2.8007,0.0042,upright,asleep,0.9,eyes closed + still 10s,0.75,0.8902,0.0034,8.0,face
+129,Rajni,True,True,0.0478,5.9763,0.0012,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8902,0.0029,8.0,face
+130,Rajni,True,True,0.0381,6.5413,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8898,0.0024,8.0,face
+131,Rajni,True,True,0.0431,6.6949,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8898,0.002,8.0,face
+132,Rajni,True,True,0.0429,6.5211,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8902,0.0025,8.0,face
+133,Rajni,True,True,0.0492,6.1374,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8902,0.0017,8.0,face
+134,Rajni,True,True,0.0414,6.2303,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8902,0.002,8.0,face
+135,Rajni,True,True,0.04,4.9748,0.0001,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8898,0.0023,8.0,face
+136,Rajni,True,True,0.0509,7.5159,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8898,0.0024,8.0,face
+137,Rajni,True,True,0.055,7.8418,0.0,upright,asleep,0.9,eyes closed + still 10s,1.0,0.8902,0.0023,8.0,face
+138,Rajni,True,True,0.0451,5.9253,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0027,9.0,face
+139,Rajni,True,True,0.0375,4.3004,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0024,8.0,face
+140,Rajni,True,True,0.0431,5.7942,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0017,8.0,face
+141,Rajni,True,True,0.0481,6.1427,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0022,8.0,face
+142,Rajni,True,True,0.0361,7.5878,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0025,8.0,face
+143,Rajni,True,True,0.0498,9.8838,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0017,10.0,face
+144,Rajni,True,True,0.051,10.2331,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0024,10.0,face
+145,Rajni,True,True,0.0403,9.8721,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0018,10.0,face
+146,Rajni,True,True,0.055,9.1816,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0021,10.0,face
+147,Rajni,True,True,0.0631,10.4844,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0024,10.0,face
+148,Rajni,True,True,0.0688,9.8492,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0023,10.0,face
+149,Rajni,True,True,0.0537,9.9906,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0018,10.0,face
+150,Rajni,True,True,0.0727,11.0888,0.0,upright,asleep,0.9,still asleep,1.0,0.8902,0.0017,10.0,face
+151,Rajni,True,True,0.0576,12.4573,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0019,10.0,face
+152,Rajni,True,True,0.059,12.3391,0.0,upright,asleep,0.9,still asleep,1.0,0.8898,0.0017,10.0,face
+153,Rajni,True,True,0.0689,12.3482,0.0,upright,asleep,0.9,still asleep,1.0,0.8943,0.0016,10.0,face
+154,Rajni,True,True,0.0651,12.5763,0.0,upright,asleep,0.9,still asleep,1.0,0.8943,0.0019,10.0,face
+155,Rajni,True,True,0.0469,13.2028,0.0,upright,asleep,0.9,still asleep,1.0,0.9228,0.0022,10.0,face
+156,Rajni,True,True,0.0555,11.2707,0.0003,upright,asleep,0.9,still asleep,1.0,0.9553,0.002,10.0,face
+157,Rajni,True,True,0.0536,11.0172,0.0,upright,asleep,0.9,still asleep,1.0,0.9918,0.0021,10.0,face
+158,Rajni,True,True,0.0523,12.0137,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0025,10.0,face
+159,Rajni,True,True,0.0719,11.9485,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+160,Rajni,True,True,0.0761,12.634,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.002,10.0,face
+161,Rajni,True,True,0.0686,13.6357,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0018,10.0,face
+162,Rajni,True,True,0.0708,13.7491,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,9.0,face
+163,Rajni,True,True,0.0658,12.9787,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0018,9.5,face
+164,Rajni,True,True,0.0571,13.1244,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+165,Rajni,True,True,0.077,12.9892,0.0003,upright,asleep,0.9,still asleep,1.0,1.0,0.002,10.0,face
+166,Rajni,True,True,0.0631,12.2981,0.0005,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+167,Rajni,True,True,0.0663,12.0347,0.0003,upright,asleep,0.9,still asleep,1.0,1.0,0.0022,10.0,face
+168,Rajni,True,True,0.071,12.4761,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0024,10.0,face
+169,Rajni,True,True,0.0809,13.1153,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+170,Rajni,True,True,0.0684,12.9351,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0017,10.0,face
+171,Rajni,True,True,0.0579,13.7368,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+172,Rajni,True,True,0.0642,12.7543,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0018,10.0,face
+173,Rajni,True,True,0.0681,12.4914,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+174,Rajni,True,True,0.0662,12.8601,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0017,10.0,face
+175,Rajni,True,True,0.0723,13.1031,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+176,Rajni,True,True,0.0656,12.9208,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+177,Rajni,True,True,0.059,13.2442,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0017,10.0,face
+178,Rajni,True,True,0.052,13.4284,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.002,10.0,face
+179,Rajni,True,True,0.0599,13.1787,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+180,Rajni,True,True,0.056,13.0274,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+181,Rajni,True,True,0.0564,12.188,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+182,Rajni,True,True,0.0626,12.7064,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,10.0,face
+183,Rajni,True,True,0.0659,12.4142,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0023,10.0,face
+184,Rajni,True,True,0.068,12.2029,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0024,10.0,face
+185,Rajni,True,True,0.0774,12.4923,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0029,10.0,face
+186,Rajni,True,True,0.0678,12.1793,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0022,10.0,face
+187,Rajni,True,True,0.0738,10.9371,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0024,9.5,face
+188,Rajni,True,True,0.0959,9.8551,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.003,10.0,face
+189,Rajni,True,True,0.1101,9.9702,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0028,10.0,face
+190,Rajni,True,True,0.1049,10.4439,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0024,9.0,face
+191,Rajni,True,True,0.0841,10.8838,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0031,10.0,face
+192,Rajni,True,True,0.0891,10.2384,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0029,10.0,face
+193,Rajni,True,True,0.0928,10.1377,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0027,10.0,face
+194,Rajni,True,True,0.0868,10.6495,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0027,9.5,face
+195,Rajni,True,True,0.0866,10.6152,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0023,9.5,face
+196,Rajni,True,True,0.076,10.4539,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0021,9.0,face
+197,Rajni,True,True,0.084,10.8679,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0026,9.5,face
+198,Rajni,True,True,0.0683,11.658,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0022,10.0,face
+199,Rajni,True,True,0.082,12.1625,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0018,10.0,face
+200,Rajni,True,True,0.0839,11.0792,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0023,10.0,face
+201,Rajni,True,True,0.0627,13.1325,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0018,10.0,face
+202,Rajni,True,True,0.0677,12.9779,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0019,10.0,face
+203,Rajni,True,True,0.0574,13.521,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.002,10.0,face
+204,Rajni,True,True,0.0632,13.5422,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.0016,10.0,face
+205,Rajni,True,True,0.0673,13.0759,0.0,upright,asleep,0.9,still asleep,1.0,1.0,0.002,10.0,face
+206,Rajni,True,True,0.0694,13.256,0.0,upright,asleep,0.9,still asleep,0.8889,0.9959,0.0024,10.0,face
+207,Rajni,True,True,0.2378,-5.648,0.0187,upright,awake,0.9,woke up (eyes open 2s),0.25,0.9715,0.0063,8.5,face
+208,Rajni,True,True,0.2397,-5.522,0.0006,upright,awake,0.9,woke up (eyes open 2s),0.125,0.9431,0.0023,8.0,face
+209,Rajni,True,True,0.2665,-4.5688,0.0,upright,awake,0.9,eyes open,0.0,0.9106,0.003,8.0,face
+210,Rajni,True,True,0.2684,-4.215,0.0,upright,awake,0.9,eyes open,0.0,0.8776,0.0016,8.0,face
+211,Rajni,True,True,0.247,-3.3582,0.0,upright,awake,0.9,eyes open,0.125,0.849,0.0017,8.0,face

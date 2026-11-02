@@ -1,0 +1,76 @@
+{
+  "video": "data\\videos\\clip08_two_people.mp4",
+  "summary": [
+    "Abhinand asleep 00:24-01:02 (total 00:38)",
+    "Rajni asleep 01:23-02:05, 02:08-03:27 (total 02:01)"
+  ],
+  "people": {
+    "Abhinand": {
+      "asleep_intervals": [
+        {
+          "start_sec": 24,
+          "end_sec": 62,
+          "start": "00:24",
+          "end": "01:02",
+          "duration_sec": 38,
+          "mean_confidence": 0.9
+        }
+      ],
+      "total_asleep_sec": 38,
+      "seconds_per_state": {
+        "awake": 47,
+        "drowsy": 127,
+        "asleep": 38,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "face",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.3044,
+        "threshold": 0.1522,
+        "baseline_pitch": -7.4183
+      }
+    },
+    "Rajni": {
+      "asleep_intervals": [
+        {
+          "start_sec": 83,
+          "end_sec": 125,
+          "start": "01:23",
+          "end": "02:05",
+          "duration_sec": 42,
+          "mean_confidence": 0.9
+        },
+        {
+          "start_sec": 128,
+          "end_sec": 207,
+          "start": "02:08",
+          "end": "03:27",
+          "duration_sec": 79,
+          "mean_confidence": 0.9
+        }
+      ],
+      "total_asleep_sec": 121,
+      "seconds_per_state": {
+        "awake": 75,
+        "drowsy": 16,
+        "asleep": 121,
+        "unknown": 0,
+        "absent": 0
+      },
+      "identity_source": "face",
+      "calibration": {
+        "method": "first_seconds",
+        "baseline_ear": 0.2871,
+        "threshold": 0.1435,
+        "baseline_pitch": -4.4388
+      }
+    }
+  },
+  "definition": {
+    "face_sleep_seconds": 10,
+    "body_sleep_seconds": 45,
+    "wake_seconds": 2
+  }
+}
