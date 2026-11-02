@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sleep Detection from Video</title>
+<style>
+  :root {
+    --ink: #1B2330;
+    --body: #2E3644;
+    --muted: #6B7482;
+    --rule: #E3E6EB;
+    --panel: #F4F6F9;
+    --accent: #1E3F7A;
+    --accent-soft: #E8EEF8;
+    --awake: #3C9D6E;
+    --drowsy: #E39A3B;
+    --asleep: #2F5FB3;
+    --warn: #B5532B;
+    --warn-soft: #FBF1EA;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 8.15pt;
+    line-height: 1.36;
+    color: var(--body);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm; height: 297mm;
+    padding: 11mm 13mm 11mm 13mm;
+    position: relative; overflow: hidden;
+    page-break-after: always; break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+
+  /* ---------- header ---------- */
+  .masthead { border-bottom: 2px solid var(--accent); padding-bottom: 3.2mm; margin-bottom: 3.6mm; }
+  .eyebrow { font-size: 7.2pt; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 21pt; line-height: 1.1; margin: 1mm 0 1.2mm; color: var(--ink); font-weight: 700; letter-spacing: -.01em; }
+  .lede { font-size: 9.6pt; color: var(--body); margin: 0; max-width: 165mm; }
+  .byline { display: flex; justify-content: space-between; margin-top: 2mm; font-size: 7.6pt; color: var(--muted); }
+  .byline b { color: var(--ink); font-weight: 600; }
+
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.6mm; margin-bottom: 4mm; }
+  .kpi { background: var(--panel); border-radius: 1.6mm; padding: 2.3mm 3mm 2.4mm; }
+  .kpi .v { font-size: 17pt; font-weight: 700; color: var(--accent); line-height: 1; }
+  .kpi .v small { font-size: 9pt; font-weight: 600; color: var(--muted); margin-left: .6mm; }
+  .kpi .l { font-size: 7.3pt; color: var(--body); margin-top: 1.2mm; line-height: 1.3; }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-size: 11pt; color: var(--ink); margin: 0 0 1.6mm; font-weight: 700;
+    display: flex; align-items: baseline; gap: 2mm;
+  }
+  h2 .n {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 4.6mm; height: 4.6mm; border-radius: 50%;
+    background: var(--accent); color: #fff; font-size: 7.4pt; font-weight: 700;
+    transform: translateY(-.3mm);
+  }
+  h3 { font-size: 8.6pt; color: var(--ink); margin: 2.2mm 0 .8mm; font-weight: 700; }
+  p { margin: 0 0 1.6mm; }
+  b, strong { color: var(--ink); font-weight: 600; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 7.8pt; color: var(--ink); background: var(--panel); padding: 0 .6mm; border-radius: .6mm; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 6mm; }
+  section { margin-bottom: 4.2mm; }
+  ul { margin: 0 0 1.6mm; padding-left: 3.6mm; }
+  li { margin-bottom: .7mm; }
+  li::marker { color: var(--accent); }
+
+  /* rule card for the definition */
+  .rules { border: 1px solid var(--rule); border-radius: 1.6mm; overflow: hidden; margin: 1.6mm 0 2mm; }
+  .rule { display: grid; grid-template-columns: 19mm 1fr auto; align-items: center; gap: 2.4mm; padding: 1.5mm 2.4mm; border-top: 1px solid var(--rule); }
+  .rule:first-child { border-top: 0; }
+  .rule .when { font-size: 7.4pt; font-weight: 700; color: var(--ink); line-height: 1.2; }
+  .rule .when span { display: block; font-weight: 400; color: var(--muted); }
+  .rule .cond { font-size: 8pt; line-height: 1.3; }
+  .pill { font-size: 7pt; font-weight: 700; color: #fff; border-radius: 3mm; padding: .5mm 2mm; white-space: nowrap; }
+  .pill.asleep { background: var(--asleep); }
+  .pill.drowsy { background: var(--drowsy); }
+  .pill.unknown { background: #8E959F; }
+  .pill.soft { background: var(--accent-soft); color: var(--accent); }
+
+  /* signal table */
+  table { border-collapse: collapse; width: 100%; }
+  .signals td { padding: 1.1mm 1.6mm 1.1mm 0; vertical-align: top; border-top: 1px solid var(--rule); font-size: 8pt; line-height: 1.32; }
+  .signals tr:first-child td { border-top: 0; }
+  .signals td:first-child { width: 15.5mm; white-space: nowrap; font-weight: 700; color: var(--ink); }
+  .signals .why { color: var(--muted); }
+
+  figure { margin: 0; }
+  figure img { width: 100%; display: block; border-radius: 1.2mm; }
+  figcaption { font-size: 7.2pt; color: var(--muted); margin-top: 1.1mm; line-height: 1.3; }
+  figcaption b { color: var(--ink); }
+
+  /* results table */
+  .results { margin: .6mm 0 1mm; font-size: 7.9pt; }
+  .results th { text-align: right; font-size: 6.9pt; font-weight: 600; color: var(--muted); padding: .7mm 1.4mm; border-bottom: 1.5px solid var(--ink); line-height: 1.2; }
+  .results th:first-child, .results td:first-child { text-align: left; padding-left: 0; }
+  .results td { text-align: right; padding: .8mm 1.4mm; border-bottom: 1px solid var(--rule); font-variant-numeric: tabular-nums; }
+  .results tr.best td { background: var(--accent-soft); color: var(--accent); font-weight: 700; border-bottom: 0; }
+  .results tr.best td:first-child { padding-left: 1.6mm; }
+  .results td .note { font-weight: 400; color: var(--muted); font-size: 7.2pt; }
+  .tnote { font-size: 7.1pt; color: var(--muted); line-height: 1.3; }
+
+  .callout { background: var(--warn-soft); border-left: 2.2px solid var(--warn); border-radius: 0 1.4mm 1.4mm 0; padding: 2.2mm 3.2mm; margin: 3mm 0 0; font-size: 8pt; }
+  .callout h3 { margin-top: 0; color: var(--warn); }
+  .callout ol { margin: .6mm 0 1.2mm; padding-left: 4mm; }
+  .callout li { margin-bottom: .4mm; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .fails { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 6mm; }
+  .fail h3 { margin-top: 0; }
+  .fail p { margin: 0; font-size: 8pt; }
+  .tag { display: inline-block; font-size: 6.6pt; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--warn); margin-right: 1mm; }
+
+  .next { margin-top: 2.4mm; padding-top: 2mm; border-top: 1px solid var(--rule); }
+
+  /* roadmap */
+  .roadmap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; margin-top: 2mm; }
+  .stage { background: var(--panel); border-radius: 1.6mm; padding: 2.2mm 2.6mm 2.4mm; position: relative; }
+  .stage .when { font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; color: var(--accent); }
+  .stage h4 { font-size: 8.4pt; margin: .6mm 0 1mm; color: var(--ink); }
+  .stage ul { padding-left: 3.2mm; margin: 0; font-size: 7.4pt; line-height: 1.3; }
+  .stage li { margin-bottom: .6mm; }
+  .stage.now { background: var(--accent); }
+  .stage.now .when, .stage.now h4, .stage.now li { color: #fff; }
+  .stage.now li::marker { color: #9FB6DE; }
+
+  .footer { position: absolute; left: 13mm; right: 13mm; bottom: 5mm; display: flex; justify-content: space-between; font-size: 6.8pt; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1.4mm; }
+</style>
+</head>
+<body>
+
+<!-- ============================ PAGE 1 ============================ -->
+<div class="page">
+  <header class="masthead">
+    <div class="eyebrow">Computer vision take-home · KRP Solutions</div>
+    <h1>Sleep Detection from Video</h1>
+    <p class="lede">Given an ordinary webcam video, my system says for every person and every second whether they are
+      <b>awake</b>, <b>drowsy</b>, <b>asleep</b>, <b>unknown</b> or <b>absent</b>, lists their sleep intervals, and names
+      each person from one reference photo. It uses only pretrained models plus a small set of explainable rules; nothing was trained.</p>
+    <div class="byline"><span><b>Abhinand</b> · B.Tech, 2nd year</span><span>Code: <a href="https://github.com/Abhinand-Nr/sleep-detection">github.com/Abhinand-Nr/sleep-detection</a> · <a href="https://drive.google.com/file/d/1u6ebndxIy5NKnXVeiqOToZlYqAGjwAz3/view?usp=sharing">3-min demo video</a></span></div>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">0.95</div><div class="l">asleep F1 on the held-out eval clips (precision 0.95, recall 0.95)</div></div>
+    <div class="kpi"><div class="v">0<small>s</small></div><div class="l">false “asleep” on the phone clip, vs 117 s for the naive eyes-closed rule</div></div>
+    <div class="kpi"><div class="v">2<small>/ 2</small></div><div class="l">people named correctly in the two-person clip, from one photo each</div></div>
+    <div class="kpi"><div class="v">9<small>clips</small></div><div class="l">about 25 min of my own footage, labelled per second by hand</div></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <section>
+        <h2><span class="n">1</span>What counts as “asleep”</h2>
+        <p>A camera cannot see brain activity, so I detect <b>behavioural sleep</b>: what a person watching the video would
+          call asleep. The rule depends on what is visible, and every threshold below is a setting in <code>config.yaml</code>.</p>
+        <div class="rules">
+          <div class="rule">
+            <div class="when">Face visible</div>
+            <div class="cond">Eyes closed (eye-openness below 0.5 × the person’s own open-eye level) <b>and</b> body still for <b>10 s</b></div>
+            <span class="pill asleep">asleep · 0.9</span>
+          </div>
+          <div class="rule">
+            <div class="when">Face hidden<span>head on arms, facing away</span></div>
+            <div class="cond">Body still for <b>45 s</b> in a sleep posture: slumped, head on arms, or lying</div>
+            <span class="pill asleep">asleep · 0.65</span>
+          </div>
+          <div class="rule">
+            <div class="when">In between</div>
+            <div class="cond">Eyes shut longer than a 0.5 s blink but under 10 s, PERCLOS ≥ 0.3 over 30 s, or head nodding</div>
+            <span class="pill drowsy">drowsy</span>
+          </div>
+          <div class="rule">
+            <div class="when">Not visible</div>
+            <div class="cond">Person mostly out of view or hidden: no guess is made</div>
+            <span class="pill unknown">unknown</span>
+          </div>
+        </div>
+        <p><b>Why these choices.</b> Ten seconds is far longer than a blink or a short eye rest, and requiring stillness as
+          well stops “eyes closed while thinking” from counting. Without the eyes there is less evidence, so the body-only
+          path waits longer and reports lower confidence. Waking up needs 2 s of open eyes or clear movement, so one bad
+          frame cannot flip the state.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">2</span>Signals, and why I chose them</h2>
+        <table class="signals">
+          <tr><td>People</td><td>YOLOv8n-pose (6.8 MB) finds people and 17 body keypoints; ByteTrack keeps one ID per person.
+            <span class="why">Gives posture and a box to measure motion in.</span></td></tr>
+          <tr><td>Eyes</td><td>YuNet (0.2 MB) finds faces; MediaPipe Face Landmarker (3.8 MB) gives 478 face points and head angles.
+            Eye aspect ratio (EAR) from 6 points per eye, calibrated on each person’s first 10 s facing the camera.
+            <span class="why">Cheap, explainable, and per-person calibration handles different eye shapes.</span></td></tr>
+          <tr><td>Head pose</td><td>Eyes are trusted only when the head is roughly frontal: turned &lt; 35°, tilted down &lt; 25° from
+            normal and &lt; 20° from the camera. <span class="why">Looking down at a phone makes open eyes look closed.</span></td></tr>
+          <tr><td>Motion</td><td>Pixel-change “motion energy” inside the person’s box minus background change.
+            <span class="why">Sleep means stillness; subtracting the background ignores light flicker and camera noise.</span></td></tr>
+          <tr><td>Identity</td><td>SFace 128-number face embeddings compared with <code>refs/</code>, voted over the whole track
+            (threshold 0.363), with a clothing-colour backup. <span class="why">The name stays when the face is hidden.</span></td></tr>
+        </table>
+      </section>
+    </div>
+
+    <div>
+      <figure style="margin-bottom:3.4mm">
+        <img src="figures/frame_clip08.jpg" alt="Two people at a desk with coloured boxes, names and states">
+        <figcaption><b>Clip 8 at 0:45, system output.</b> Abhinand is asleep (EAR 0.06), Rajni is awake (EAR 0.25).
+          Names come from face matching: Abhinand’s track scores 0.74 to his photo vs 0.07 to Rajni’s; Rajni’s two
+          tracks score 0.78 / 0.76 vs 0.11 / 0.12.</figcaption>
+      </figure>
+
+      <section>
+        <h3 style="margin-top:0">Why pretrained models and rules, not a trained model</h3>
+        <p>I had about 25 minutes of my own footage, which is enough to test rules but far too little to train a sleep
+          classifier that I could trust. Rules built on well-tested pretrained detectors are easy to explain (each output row
+          says <i>why</i>, e.g. “eyes closed + still 10 s”) and easy to fix when they fail.</p>
+        <p>The pipeline runs in two passes: the slow model pass is cached (<code>signals.pkl</code>), and the fast rule pass can be
+          re-run and tuned in seconds. There are 47 automated tests and a tested Dockerfile.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">3</span>How I decided whether it works</h2>
+        <p><b>Data.</b> 9 clips (about 25 min, 1280×720, laptop webcam, one room). Eight have one person: normal work, 5 s eye
+          closures, acted sleep facing the camera (×2), head on desk, sideways on a phone, looking down at a phone, and dim
+          light. One clip has two people (Abhinand and Rajni, 3.5 min). Every second was labelled by hand; closures under 10 s
+          are labelled drowsy.</p>
+        <p><b>Split.</b> <b>Tune</b> = clips 1, 3a, 4a (486 s). Only two thresholds were grid-searched there (24 combinations):
+          <code>closed_ratio</code> 0.6 → 0.5 and <code>still_threshold</code> 0.01 → 0.02. <b>Eval</b> = clips 2, 3b, 4b, 5, 6, 8
+          (1161 person-seconds), scored once with those values.</p>
+        <p><b>Baselines.</b> <b>Naive</b>: eyes below threshold = asleep, no timing. <b>Face-only</b>: my state machine without
+          the body signals. <b>Full</b>: everything above. <b>Metrics</b> are per second with asleep as the positive class:
+          precision, recall, F1, IoU of asleep seconds, plus accuracy over all five states.</p>
+        <h3>Results on the eval split <span style="font-weight:400;color:var(--muted)">(asleep = positive class)</span></h3>
+        <table class="results">
+          <tr><th>system</th><th>precision</th><th>recall</th><th>F1</th><th>IoU</th><th>accuracy, all states</th></tr>
+          <tr><td>Naive</td><td>0.58</td><td>0.96</td><td>0.72</td><td>0.57</td><td>0.80</td></tr>
+          <tr><td>Face-only</td><td>0.82</td><td>0.96</td><td>0.88</td><td>0.79</td><td>0.77</td></tr>
+          <tr class="best"><td>Full system</td><td>0.95</td><td>0.95</td><td>0.95</td><td>0.91</td><td>0.78</td></tr>
+        </table>
+        <div class="tnote">1161 person-seconds never used for tuning. Tune split, full system: F1 0.96.
+          Accuracy over all five states is held down by extra “drowsy” (§4).</div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer"><span>Sleep Detection from Video · Abhinand</span><span>1 / 2</span></div>
+</div>
+
+<!-- ============================ PAGE 2 ============================ -->
+<div class="page">
+  <section>
+    <h3 style="margin-top:0">What each part adds, clip by clip</h3>
+    <p>On eyes-closed sleep facing the camera the full system reaches F1 0.98 (clip 3b), and 0.95 in dim light at 16 fps
+      (clip 6). All three 5 s eye closures in clip 2 were called drowsy, not asleep (naive: 15 false asleep seconds). With two
+      people (clip 8) F1 is 0.94 and both are named correctly. Speed is 5–9 processed frames/s on a laptop CPU with no GPU,
+      i.e. 1–2.2× the video length.</p>
+    <figure>
+      <img src="figures/baselines.svg" alt="Bar charts comparing naive, face-only and full systems">
+      <figcaption><b>Each step removes a class of error.</b> Adding timing rules (face-only) and then body signals (full) takes the
+        phone clip from 117 to 48 to 0 false asleep seconds. With the face hidden on the desk, face-only misses all 79 sleep
+        seconds; the full system misses 1, using the body path.</figcaption>
+    </figure>
+
+    <figure style="margin-top:3mm">
+      <img src="figures/timeline_clip08.svg" alt="Timeline of labels vs system output for two people in clip 8">
+      <figcaption><b>Clip 8, labels vs system, per second.</b> Both sleep periods are found, and Rajni’s 115 s sleep is followed
+        across a tracker ID switch. The extra orange on Abhinand’s row is the over-eager nodding rule described in §4.</figcaption>
+    </figure>
+
+    <div class="callout">
+      <h3>How the final numbers were reached (please read before trusting them)</h3>
+      <p style="margin-bottom:.6mm">The first evaluation gave eval F1 <b>0.61</b> (kept in <code>outputs/evaluation_v1_before_fixes/</code>).
+        Looking at the eval failures, I found three bugs and fixed each with a new test:</p>
+      <ol>
+        <li>The per-event IoU metric mixed clips together, giving values above 1.</li>
+        <li>The phone clip started head-down, so “head down” was learned as normal (74 false asleep seconds). Now calibration uses only camera-facing frames, plus a 20° absolute head-down limit.</li>
+        <li>Rajni’s track ID changed at 2:07 with 0.4 s of overlap, so the new track was left unnamed. Up to 1 s of overlap is now allowed at a handover.</li>
+      </ol>
+      <p>Four label spans in clips 4b and 8 disagreed with the video; the actor re-checked and corrected them (clip 4b was really
+        phone use, not sleep). Both steps used eval clips, so the final 0.95 is <b>optimistic</b>. The tune-split F1 (0.96) did not change.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>Where it fails, and what I would do next</h2>
+    <div class="fails">
+      <div class="fail">
+        <h3><span class="tag">False positive risk</span>Phone use vs dozing</h3>
+        <p>Head pitch was +15° to +31° while looking at a phone and about +18° when dozing with the chin dropped. The 20° limit
+          separates them on my clips, but the margin is only a few degrees.</p>
+      </div>
+      <div class="fail">
+        <h3><span class="tag">Main error</span>Too much “drowsy”</h3>
+        <p>225 of 794 labelled-awake eval seconds were called drowsy, mostly the head-nodding rule firing on normal head
+          movement. It does not touch the asleep metrics, but keeps all-state accuracy at 0.78.</p>
+      </div>
+      <div class="fail">
+        <h3><span class="tag">Untested</span>Sleep while facing away</h3>
+        <p>No eval clip has it (clip 4b turned out to be phone use), so the body-only path is only tested on clip 4a, a tune
+          clip. In clip 8, sleep onset was found about 8 s before the label (Rajni’s eyes closed at 1:22).</p>
+      </div>
+      <div class="fail">
+        <h3><span class="tag">Scope</span>Small, acted data; offline</h3>
+        <p>Acted sleep, two people, one room, one camera. The offline “backfill” marks the first 10 s of a sleep once it is
+          confirmed, so a live version would report onset 10 s late.</p>
+      </div>
+    </div>
+    <div class="next">
+      <b>Next, with more time:</b> record more people, rooms and real (not acted) naps, including more eval clips facing away;
+      replace the nodding rule with a frequency-based one or require repeated dips; use YOLO’s “cell phone” class and hand
+      position to separate phone use from dozing; add a live webcam mode (same rules, no backfill).
+    </div>
+  </section>
+
+  <section style="margin-bottom:0">
+    <h2><span class="n">5</span>Long-term vision</h2>
+    <p>One explainable state per person per second can grow into a monitoring tool for places where falling asleep matters, with video kept on the device.</p>
+    <div class="roadmap">
+      <div class="stage now">
+        <div class="when">Now</div>
+        <h4>Offline, explainable</h4>
+        <ul>
+          <li>Recorded video, up to two named people</li>
+          <li>Per-second CSV, intervals, annotated video</li>
+          <li>Every threshold in one config file</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="when">Next</div>
+        <h4>Live and context-aware</h4>
+        <ul>
+          <li>Live webcam mode with running identity votes</li>
+          <li>Phone and hand detection to tell phone use from dozing</li>
+          <li>Better nodding rule; more, real sleep data</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="when">Later</div>
+        <h4>Real settings</h4>
+        <ul>
+          <li>Classrooms, offices, control rooms, driver monitoring</li>
+          <li>Several cameras with re-ID across them</li>
+          <li>Alerts (e.g. asleep for N minutes) and a dashboard of timelines</li>
+        </ul>
+      </div>
+      <div class="stage">
+        <div class="when">Long term</div>
+        <h4>Private and learned</h4>
+        <ul>
+          <li>Edge devices: only states and timestamps leave the camera</li>
+          <li>A small learned model once real labelled data exists, with rules kept as the explanation</li>
+          <li>Opt-in faces only; clear consent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer"><span>Sleep Detection from Video · Abhinand</span><span>2 / 2</span></div>
+</div>
+
+</body>
+</html>

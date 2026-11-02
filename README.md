@@ -7,6 +7,11 @@ summary of asleep intervals. With reference photos it names people, e.g.
 It uses only **pretrained models plus explainable rules**. Nothing is trained. It keeps working when
 people **face away from the camera**.
 
+- **Demo video (3 min, annotated):** [Google Drive](https://drive.google.com/file/d/1u6ebndxIy5NKnXVeiqOToZlYqAGjwAz3/view?usp=sharing), made with `scripts/make_demo.py`
+- **Write-up (2 pages):** [`Sleep_Detection_Report.pdf`](Sleep_Detection_Report.pdf)
+- **Results:** [`outputs/evaluation/results_table.md`](outputs/evaluation/results_table.md); eval-split asleep F1 0.95
+  (see *Results* below for how that number was reached)
+
 ## Assumptions
 
 - Fixed camera, indoor lighting, offline processing of recorded video (designed so a real-time
